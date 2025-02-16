@@ -1,0 +1,432 @@
+.shipping {
+    background-color: var(--bgwhite);
+    border: dashed 1px var(--bggrey);
+    border-radius: 10px;
+    padding: 30px 30px 15px;
+    /* visibility: hidden;
+    opacity: 0;
+    transform: translateY(20%); */
+}
+.shipping.show{
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0%);
+}
+.shipping span{
+    padding: 0px 10px;
+    border: solid 1px;
+    border-radius: 50px;
+    font-size: 2.5rem;
+}
+.shipping p{
+    font-size: 0.85rem;
+    
+}
+
+
+
+
+
+#browsetopcat .swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+ #browsetopcat .swiper-slide  {
+     height: 100%;
+     display: flex;
+     flex-flow: column;
+     align-items: center;
+    }
+    #browsetopcat .swiper-slide .outter{
+        position: relative;
+        overflow: hidden;
+        border: solid 3px;
+        border-radius: 20px;
+        width: 100%;
+    }
+    #browsetopcat .swiper-slide .outter img{
+        object-fit: cover;
+        width: 100%;
+    }
+    
+    #browsetopcat .swiper-slide a{
+        color: var(--bgdarkblue);
+        text-decoration: none;
+        background-color: var(--bgwhite);
+        border: none;
+        box-shadow: 0px 0px 2px black;
+        border-radius: 20px;
+        text-align: center;
+        padding: 10px 20px;
+        margin-bottom: 10px;
+        position: relative;
+        bottom: 20px;
+    }
+
+  
+
+
+    #browsetopcat .swiper-button-prev1,
+    #browsetopcat .swiper-button-next1,
+    .trendingproducts .swiper-button-prev3,
+    .trendingproducts .swiper-button-next3,
+    .clientsay .swiper-button-prev4,
+    .clientsay .swiper-button-next4,
+    .content .swiper-button-prev6,
+    .content .swiper-button-next6,
+    .content .swiper-button-prev2,
+    .content .swiper-button-next2{
+    height: 50px;
+    width: 50px;
+    border: solid 1px;
+    color:var(--bgblue);
+    border-radius: 50px;
+    position: static;
+    transition: all 0.3s ease-in;
+    font-size: 1.4rem;
+    text-align: center;
+    line-height: 47px;
+}
+#browsetopcat .swiper-button-prev1:hover,
+#browsetopcat .swiper-button-next1:hover,
+.trendingproducts .swiper-button-prev3:hover,
+.trendingproducts .swiper-button-next3:hover,
+.clientsay .swiper-button-prev4:hover,
+.clientsay .swiper-button-next4:hover,
+.content .swiper-button-prev6:hover,
+.content .swiper-button-next6:hover,
+.content .swiper-button-prev2:hover,
+.content .swiper-button-next2:hover{
+        background-color: var(--bgdarkblue);
+        color: var(--bgwhite);
+    }
+
+
+.trendingproducts .text,
+.discounts .inner .text{
+ padding: 20px;
+ display: flex;
+ flex-flow: column wrap;
+ gap: 20px;
+}
+.trendingproducts .text h2,
+.discounts .inner .text h2{
+font-weight: 400;
+font-size: 1.6rem;
+color: var(--bggrey);
+font-family: var(--fontsans);
+}
+.trendingproducts .text h1,
+.discounts .inner .text h1{
+    font-weight: 500;
+font-size: 3.7rem;
+font-family: var(--fontsans);
+}
+.trendingproducts .text h3,
+.discounts .inner .text h3{
+    font-weight: 600;
+font-size: 1.7rem;
+color: var(--bggrey);
+font-family: var(--fontsans);
+}
+.discounts .inner .text a{
+    text-decoration: none;
+    color: var(--bgwhite);
+    padding: 10px 20px;
+    border-radius: 40px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    font-family: var(--fontsans);
+    background-color: var(--bgdarkblue);
+    width:140px;
+    text-wrap: nowrap;
+    text-align: center;
+    transition: all 0.3s ease-in;
+}
+.discounts .inner .text a:hover{
+    background-color: var(--bgcrimson);
+}
+.discounts .inner{
+    border: solid 2px ;
+    border-radius: 20px;
+    margin: auto;
+    height: 100%;
+}
+.discounts .inner .image{
+    display: flex;
+    flex-flow: row;
+    justify-content: end;
+    align-items: end;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+
+    pointer-events: none;
+}
+.discounts .inner .image img{
+    width: 50%;
+    height: 95%;
+}
+.discounts .inner .vectors{
+ position: absolute;
+ padding-top: 45px;
+ width: 100%;
+ height: 100%;
+ top: 0px;
+ left: 0px;
+ z-index: 0;
+ pointer-events: none;
+
+}
+.featuredprod input[type="radio"]{
+    display: none;
+}
+.featuredprod .labelcont{
+display: flex;
+justify-content: center;
+align-items: center;
+border: solid 1px;
+width: auto; 
+border-radius: 40px;
+padding: 10px;
+
+}
+.featuredprod .labelcont label{
+    padding: 10px 20px;
+    border-radius: 40px;
+    cursor: pointer;
+}
+.featuredprod .labelcont label.active{
+background-color: var(--bgdarkblue);
+color: var(--bgwhite);
+
+}
+
+#nproducts1,
+#sproducts1{
+    display: none;
+}
+
+.content .imgcontainer span{
+position: absolute;
+top: 20px;
+left: 0px;
+background-color: var(--bgdarkblue);
+color: var(--bgwhite);
+padding: 5px 10px;
+border-radius: 0px 30px 30px 0px;
+font-size: 0.9rem;
+
+}
+.content .imgcontainer{
+overflow: hidden;
+border-radius: 20px;
+}
+.content .imgcontainer img{
+    width: 100%;
+}
+.content .imgcontainer .iconscont{
+    position: absolute;
+    right: 10px;
+    top: 30px;
+    display: flex;
+    flex-flow: column;
+    font-size: 1.2rem;
+    gap: 10px;
+    transform: translateX(200%);
+    transition: all 0.35s ease-in;
+}
+.content .imgcontainer .iconscont a{
+    color: var(--bgdarkblue);
+    background-color: var(--bgwhite);
+    border: solid 1px;
+    padding: 6px 12px;
+    border-radius: 50px;
+}
+.content .imgcontainer:hover .iconscont{
+    transform: translateX(0%);
+}
+.content .imgcontainer .hiddenbtn{
+    position: absolute;
+    bottom: -25px;
+    left: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    background-color: var(--bgdarkblue);
+    border: solid 2px var(--bgwhite);
+    border-radius:300px 300px 0px 0px ;
+    padding: 30px;
+    transform: translateY(100%);
+    transition: all 0.35s ease-in;
+
+}
+.content .imgcontainer:hover .hiddenbtn{
+    transform: translateY(0%);
+}
+.content .imgcontainer .hiddenbtn a{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: var(--bgwhite);
+    font-size: 1rem;
+    text-wrap: nowrap;
+}
+.trendingproducts .text .t1 a,
+.content .text .t1 a{
+    text-decoration: none;
+    color: var(--bggrey);
+    font-family: var(--fontsans);
+    font-size: 0.85rem;
+    margin-left: 10px;
+}
+.trendingproducts .text .t2 a,
+.content .text .t2 a{
+    text-decoration: none;
+    color: var(--bggrey);
+    font-size: 1rem;
+    width: 70%;
+    transition: all 0.3s ease-in;
+}
+.trendingproducts .text .t2 a:hover,
+.content .text .t2 a:hover{
+    color: var(--bgcrimson);
+}
+.workprocess .processcard{
+    background-color: var(--bgwhite);
+    border: none;
+    box-shadow: 0px 0px 2px var(--bggrey20);
+    border: none;
+    position: relative;
+    border-radius: 10px;
+    cursor: default;
+    border: solid 2px var(--bgwhite);
+    transition: all 0.3s ease-in;
+}
+.workprocess .processcard:hover{
+    border-color: var(--bgdarkblue);
+}
+.workprocess .processcard span{
+    position: absolute;
+    top: 0px;
+    right: 30px;
+    background-color: var(--bgyellow);
+    padding: 15px 10px;
+    border-radius:0px 0px 30px 30px ;
+}
+.trendingproducts .tcards{
+    position: relative;
+}
+.trendingproducts .tcards .imgcontainer{
+    border-radius: 20px;
+    overflow: hidden;
+    background-color: red;
+    margin: 0px 20px;
+    z-index: 100;
+    position: relative;
+}
+.trendingproducts .tcards .imgcontainer img{
+    width: 100%;
+    
+}
+.trendingproducts .tcards .text{
+    padding-top: 165px;
+    background-color: var(--bgwhite);
+    position: relative;
+    bottom: 160px;
+    border: dashed 1px var(--bggrey);
+    border-radius: 20px;
+}
+.trendingproducts .tcards .t2 a{
+    width: 60%;
+}
+.dealoftheweek .timer div{
+    border: solid 1px;
+    border-radius: 100px;
+    width: 100px;
+    height: 100px;
+    padding-top: 10px;
+    text-align: center;
+}
+.dealoftheweek{
+    background-color:var(--bgwhite);
+    border: solid 3px;
+    border-radius: 30px;
+}
+.dealoftheweek a{
+    text-decoration: none;
+    background-color: var(--bgdarkblue);
+    color: var(--bgwhite);
+    font-family: var(--fontsans);
+    padding: 12px 25px;
+    border-radius: 30px;
+    font-size: 1.2rem;
+    transition: all 0.3s ease-in;
+    width: fit-content;
+}
+.dealoftheweek a:hover{
+    background-color: var(--bgcrimson);
+
+}
+.ourblogs a{
+    text-decoration: none;
+    color: var(--bgdarkblue);
+    transition: all 0.3s ease-in;
+}
+.ourblogs a:hover{
+color: var(--bgcrimson);
+}
+.ourblogs p{
+    text-transform: capitalize;
+    font-size: 1.1rem;
+}
+.bottomtext a,
+.bottomtext span{
+    font-size: 0.95rem;
+    font-family: var(--fontsans);
+    color: var(--bggrey);
+}
+.newsettler input[type="text"]{
+    outline: none;
+    border-radius: 30px;
+    padding: 16px 140px 16px 20px;
+    border: solid 1px;
+    width: 100%;
+    height: 100%;
+}
+.newsettler input[type="text"]::placeholder{
+    font-family: var(--fontsans);
+    font-weight: 500;
+}
+.newsettler button{
+    background-color: var(--bgdarkblue);
+    border: none;
+    color: var(--bgwhite);
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    border-radius: 30px;
+    position: absolute;
+    right: 5px;
+    top: 4px;
+    font-family: var(--fontsans);
+    transition: all 0.3s ease-in;
+}
+.newsettler button:hover{
+background-color: var(--bgcrimson);
+}
+.clientsay{
+background: url(../assets/clientsopinion/bg.png) center no-repeat var(--bgwhite);
+background-size: cover;
+}
+.clientsay .clientscard{
+    border: solid 2px;
+    border-radius: 15px;
+    padding: 25px;
+}

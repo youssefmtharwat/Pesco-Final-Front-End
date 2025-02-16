@@ -1,0 +1,101 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: "Aoboshi One", serif;
+}
+:root{
+    --bgmain:rgba(255, 250, 243, 1);
+    --bgyellow:rgba(254, 235, 157, 1);
+    --bgdarkblue:rgba(19, 23, 43, 1);
+    --bgcrimson:rgba(204, 13, 57, 1);
+    --bgwhite:rgba(255, 255, 255, 1);
+    --bggrey:rgba(94, 98, 111, 1);
+    --bggrey20:rgba(94, 98, 111, 0.2);
+    --bggrey40:rgba(94, 98, 111, 0.4);
+    --bggrey10:rgba(109, 109, 109, 0.07);
+    --bgblack60:rgba(0,0,0,0.6);
+    --fontsans:   "DM Sans", sans-serif;
+    --fontao: "Aoboshi One", serif;
+    --bgorange:orange;
+}
+.bgcard1{
+    background-color: rgba(255, 249, 248, 1);
+}
+.bgcard2{
+    background-color: rgba(254, 255, 248, 1);
+}
+.bgdarkblue{
+    background-color: var(--bgdarkblue);
+}
+.bgcrimson{
+    background-color: var(--bgcrimson);
+}
+.bgorange{
+    background-color: var(--bgorange);
+}
+.bgyellow{
+    background-color: var(--bgyellow);
+}
+.bgblue{
+    background-color: rgb(0, 0, 204);
+}
+.ccrimson{
+    color: var(--bgcrimson);
+}
+.cdarkblue{
+    color: var(--bgdarkblue);
+}
+.cgrey{
+    color: var(--bggrey);
+}
+.cgrey40{
+    color: var(--bggrey40);
+}
+.cyellow{
+    color: var(--bgorange);
+}
+.fsans{
+    font-family: var(--fontsans);
+}
+body{
+    color: var(--bgdarkblue);
+    background-color: var(--bgmain);
+    font-family: "Aoboshi One", serif;
+    overflow-x: hidden;
+}
+ul{
+    list-style: none;
+}
+p{
+    font-family: var(--fontsans);
+    color: var(--bggrey);
+}
+a{
+    text-decoration: none;
+    color: var(--bgdarkblue);
+}
+
+.fadcard,
+.fadcard2,
+.fadcard3{
+    transition: all 1s ease-in-out;
+}
+.hiddenredbtn{
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 40px;
+    height: 40px;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+    background-color: var(--bgcrimson);
+    color: var(--bgwhite);
+    text-align: center;
+    line-height: 40px;
+    transform: translateY(-50%);
+    visibility: hidden;
+    opacity: 0;
+    z-index: 1000000;
+    transition: all 0.3s ease-in-out;
+}

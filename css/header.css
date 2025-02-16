@@ -1,0 +1,348 @@
+header .container-fluid{
+    background-color: var(--bgyellow);
+}
+header #pcat label{
+    border-radius: 5px;
+    background-color: var(--bgwhite);
+    padding:8px 12px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 500;
+    font-family: var(--fontsans);
+    margin: 15px 0px;
+}
+header #pcat ul{
+    position: absolute;
+    background-color: var(--bgwhite);
+    width: 230px;
+    padding: 0px 15px;
+    border-radius: 10px;
+    box-shadow: -1px 0px 2px var(--bggrey20);
+    top: 100%;
+    left: 0px;
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(5%);
+    transition: all 0.3s ease-out;
+    z-index: 100;
+}
+header #pcat ul li{
+    border: solid 1px var(--bggrey20);
+    margin:10px auto;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    padding: 10px;
+    
+}
+
+header #pcat ul li a{
+    text-decoration: none;
+    color: var(--bgdarkblue);
+    transition: all 0.3s ease-in;
+}
+header #pcat ul li a img{
+    width: 40px;
+   margin-right: 10px;
+}
+header #pcat ul #showmoremenu{
+display: none;
+}
+header #pcat ul button{
+    text-align: center;
+    background-color: var(--bgwhite);
+    border: none;
+    padding: 10px;
+    width: 100%;
+}
+header #pcat ul  i{
+    color: var(--bgcrimson);
+    font-size: 1.5rem;
+    padding-right:5px ;
+}
+header #pcat label:hover~ul,
+header #pcat ul:hover{
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0%);
+}
+header #pcat ul li:hover a{
+    color: var(--bgcrimson);
+}
+header ul{
+    z-index: 100;
+}
+
+header .mid >ul{
+    gap: 30px;
+}
+header .mid span{
+    font-size: 1.7rem;
+    font-weight: 200;
+    font-family: var(--fontsans);
+}
+header .mid ul li{
+    height: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: 1.05rem;
+    font-weight: 300;
+    position: relative;
+    transition: all 0.3s ease-in;
+}
+header .mid ul li:hover,
+header .mid ul li a:hover,
+header #burgermenu div ul li:hover,
+header #burgermenu div ul li a:hover{
+color: var(--bgcrimson);
+}
+header .mid ul li a,
+header #burgermenu div ul li a{
+    color: var(--bgdarkblue);
+    text-decoration: none;
+    transition: all 0.25s ease-in;
+}
+header .mid ul li ul{
+    position: absolute;
+    top: 100%;
+    left: 0px;
+    background-color: var(--bgwhite);
+    box-shadow: 0px 0px 20px var(--bggrey20);
+    width: 250px;
+    padding: 20px 30px;
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(20%);
+    transition: all 0.2s ease-in-out;
+}
+header .mid ul li:hover ul{
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0%);
+    
+}
+header .mid ul li ul li{
+    padding: 10px;
+}
+header .mid ul li ul li:not(:last-child) {
+    border-bottom: solid 1px var(--bggrey20);
+}
+header .mid ul li ul li a{
+    transition: all 0.3s ease-in;
+}
+header .mid ul li ul li:hover a{
+color: var(--bgcrimson);
+}
+header .right button{
+background-color: transparent;
+border: none;
+font-size: 1.6rem;
+position: relative;
+}
+header .right small{
+    font-size: 1.2rem;
+    color: var(--bgcrimson);
+    cursor: default;
+}
+header .right button span,
+header .right div span:nth-child(2){
+    position: absolute;
+    top: 3px;
+    right: -10px;
+    background-color: orange;
+    border-radius: 50px;
+    padding: 3px 4px;
+    font-size: 0.6rem;
+    cursor: pointer;
+}
+header #cartbtn{
+    background-color: var(--bgwhite);
+    border: none;
+    font-size: 1.6rem;
+    padding: 0px 10px;
+    border-radius: 5px;
+}
+header #burgerbtn{
+    background-color: transparent;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    padding:0px 5px ;
+    border: solid 1px;
+    border-radius: 5px;
+}
+
+header #burgerbtn span{
+    margin: 3px;
+    padding: 0px;
+    width: 30px;
+    height: 2px;
+    background-color: var(--bgdarkblue);
+    transition: all 0.3s ease-in-out;
+}
+header #burgerbtn span:nth-child(1).active{
+transform: rotate(45deg)  translate(4px , 2px);
+}
+header #burgerbtn span:nth-child(2).active{
+    display: none;
+}
+header #burgerbtn span:nth-child(3).active{
+transform: rotate(-45deg)  translate(4px , -2px) ;
+}
+header #cartmenu{
+    position: absolute;
+    top: 0px;
+    height: 100vh;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    background-color: var(--bgblack60);
+    z-index: 1000;
+    display: none;
+}
+header #cartmenu .hiddencart div{
+padding:20px 15px;
+}
+header #cartmenu .hiddencart div #cbtncart{
+    background-color: var(--bgwhite);
+    width: 30px;
+    height: 30px;
+    line-height: 25px;
+    border: solid 2px var(--bgcrimson);
+    font-size: 1.4rem;
+    color: var(--bgcrimson);
+}
+header #burgermenu{
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    height: 100vh;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: 10000;
+    overflow: hidden;
+    transform: translateX(-100%);
+    transition: all 0.3s ease-in-out;
+}
+header #burgermenu.active{
+    transform: translateX(0%);
+    background-color: var(--bgblack60);
+}
+header #burgermenu .menu{
+    background-color: var(--bgwhite);
+    overflow-y: auto !important;
+    height: 100%;
+    }
+    header #burgermenu .menu::-webkit-scrollbar{
+        width: 10px;
+        background-color: var(--bgwhite);
+    }
+    header #burgermenu .menu::-webkit-scrollbar-thumb{
+        background-color: var(--bgcrimson);
+    }
+header #burgermenu #searchh {
+padding: 10px;
+border: solid 1px var(--bggrey20);
+outline: none;
+width: 100%;
+font-family: var(--fontsans);
+}
+header #burgermenu #searchbtnh{
+position: absolute;
+right: 10px;
+top: 10px;
+font-size: 1.2rem;
+background-color: var(--bgwhite);
+border: none;
+}
+header #burgermenu input[type="radio"]{
+    display: none;
+}
+
+header #burgermenu label{
+    border: solid 1px var(--bggrey);
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-family: var(--fontsans);
+    font-weight: 600;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all 0.3s ease-in;
+}
+
+header #burgermenu #menur:checked~#menurl {
+    color: var(--bgwhite);
+    background-color: var(--bgcrimson);
+}
+header #burgermenu #catr:checked~#catrl {
+    color: var(--bgwhite);
+    border-color: var(--bgcrimson);
+    background-color: var(--bgcrimson);
+}
+header #burgermenu #menur:checked~#burgermenumenu{
+    display: block;
+}
+header #burgermenu #catr:checked~#burgercat{
+    display: block;
+}
+header #burgermenu #burgermenumenu{
+    display: none;
+}
+header #burgermenu #burgermenumenu ul li{
+    cursor: pointer;
+    padding: 20px 0px;
+    border-bottom: solid 1px;
+}
+header #burgermenu #burgermenumenu ul ul{
+display: none;
+padding: 0px;
+}
+header #burgermenu #burgermenumenu ul ul li{
+padding: 10px 30px;
+}
+
+header #burgermenu #burgermenumenu ul  ul li a{
+    color: var(--bgdarkblue);
+    text-decoration: none;
+}
+
+header #burgercat {
+    display: none;
+}
+header #burgercat ul{
+    background-color: var(--bgwhite);
+    width: 100%;
+    border-radius: 10px;
+    padding: 0px;
+    margin-top: 30px;
+}
+header #burgercat ul li{
+    border: solid 1px var(--bggrey20);
+    margin:15px auto;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    padding: 10px;
+    width: 100%;
+
+}
+
+header #burgercat ul li a{
+    text-decoration: none;
+    color: var(--bgdarkblue);
+    transition: all 0.3s ease-in;
+}
+header #burgercat ul li a img{
+    width: 40px;
+   margin-right: 10px;
+}
+header #burgermenu .burgerbot{
+    margin-top: 30px;
+    border: solid 1px var(--bggrey20);
+    border-radius: 5px;
+}
+header #burgermenu .burgerbot p{
+    font-family: var(--fontsans);
+}

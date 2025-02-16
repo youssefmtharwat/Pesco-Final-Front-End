@@ -1,0 +1,2903 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pesco(YMT) - eCommerce</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet"
+    href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <script src="./js/script.js"></script>
+    <script src="./js/script2.js" defer></script>
+    
+   <!-- Project Was Made By Youssef Mohamed Tharwat (YMT)
+    Design From : 
+    https://preview.themeforest.net/item/pesco-ecommerce-html-template/full_screen_preview/55448892?_ga=2.170513760.1537067574.1732723856-2103753292.1732476285&_gac=1.213191072.1732476285.EAIaIQobChMIg_y8i9n1iQMV0ZpoCR1BMAHtEAAYASAAEgLrTvD_BwE
+
+   -->
+
+</head>
+<body>  
+    <!-- NAVIGATION BAR -->
+    <nav >
+        <div class="container-fluid  bg-white pt-3 d-lg-block d-none">
+
+        <div class="container ">
+            <div class="row ">
+                <div class="col-lg-2 p-0">
+                    <a href="./index.html">
+                        <img src="./assets/logo/logo.png">
+                    </a>
+                </div>
+                <div class="col-lg-7 ms-2">
+
+                    <div class="row mid">
+                        <div class="col-xl-4 col-lg-5 px-0 mx-0">
+                            <div class="selector" id="selectcat">
+
+                                <label >
+                                <small id="cattext">
+                                    All Categories
+                                </small>
+                                
+
+                                </label>
+                                <span class=" float-end pe-3">
+                                    <i class='bx bxs-chevron-down'></i>
+                                </span>
+
+                                <ul id="selectmenu" class="hidden">
+                                    <li class="active">
+                                        All Categories
+                                    </li>
+                                    <li>
+                                        Men Shirts
+                                    </li>
+                                    <li>
+                                        Denim Jeans    
+                                    </li>
+                                    <li>
+                                        Casual Suit
+                                    </li>
+                                    <li>
+                                        Summer Dress
+                                    </li>
+                                    <li>
+                                        Sweaters
+                                    </li>
+                                    <li>
+                                        Jackets
+                                    </li>
+                                </ul>
+                    
+                            </div>
+                        </div>
+                        
+                        <div class="col-xl-8 col-lg-7 position-relative">
+                            <input type="search" placeholder="Enter Search Products"  id="search">
+                            <button id="searchbtn"><i class="bi bi-search"></i></button>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="col">
+                    <div class="row right">
+                        <div class="col-10 text-end">
+                            <p>24/7 Support
+                            </p>
+                            <h4>+94 123 4567 894</h4>
+                        </div>
+                        <div class="col-2 text-end">
+                            <i class="bi bi-headset fs-1"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </nav>
+    <!-- END OF NAVIGATION BAR -->
+    <!-- HEADER  -->
+    <header>
+        <div class="container-fluid p-0">
+            <div class="container">
+                <div class="row">
+
+                    
+                    <div class="col-xl-3 col-lg-3 d-lg-block d-none px-0 ">
+                        <div id="pcat" class=" position-relative">
+                            <label>
+                                <i class="bi bi-list-ul pe-3"></i>
+                                Products Category
+                                <i class='bx bxs-chevron-down'></i>
+                            </label>
+                            <ul>
+
+                                <li>
+                                    <a href="#">
+                                        <img src="./assets/header/shirt.png">
+                                        Men Shirts
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="./assets/header/denim.png">
+                                        Denim Jeans
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="./assets/header/suit.png">
+                                        Casual Suits
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="./assets/header/dress.png">
+                                        Summer Dresses
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="./assets/header/sweaters.png">
+                                        Sweaters
+                                    </a>
+                                </li>
+                                <div id="showmoremenu"  >
+                                            <li>
+                                        <a href="#">
+                                            <img src="./assets/header/jacket.png">
+                                            Jackets
+                                        </a>
+                                    </li>
+                                    </div>
+                                    <button id="showbtn">
+                                    <div class="d-flex justify-content-center align-items-center">
+                                        <i class="bi bi-plus-circle"></i>
+                                            Show more...
+                                        </div>
+                                    </button>
+                                
+                            </ul>
+                        </div>
+                        
+                    </div>
+
+                    <div class="col-xl-5 col-lg-6 px-0 mid d-lg-flex d-none justify-content-between align-items-center ">
+                        <span>|</span>
+                        <ul class="d-flex justify-content-center gap-4 align-items-center m-0 px-0 h-100">
+                            <li>
+                                Home<i class='bx bx-chevron-down' ></i>
+                                <ul >
+                                    <li>
+                                        <a href="./index.html">Home 01</a>
+                                    </li>
+                                    
+                                    <li>
+                                        <a href="./index.html">Home 02</a>
+                                    </li>
+                                    
+                                </ul>
+                            </li>
+                            <li>
+                                Shop<i class='bx bx-chevron-down' ></i>
+                                <ul >
+                                    <li>
+                                        <a href="./shop.html">Our Shop</a>
+                                    </li>
+                                    
+                                    <li>
+                                        <a href="./product-details.html">Product Details</a>
+                                    </li>
+                                    <li>
+                                        <a href="./cart.html">Cart</a>
+                                    </li>
+                                    <li>
+                                        <a href="./checkout.html">Checkout</a>
+                                    </li>
+                                    <li>
+                                        <a href="./whishlist.html">Wishlist</a>
+                                    </li>
+                                    
+                                </ul>
+                            </li>
+                            <li>
+                                Blog<i class='bx bx-chevron-down' ></i>
+                                <ul >
+                                    <li>
+                                        <a href="#">Our Blog</a>
+                                    </li>
+                                    
+                                    <li>
+                                        <a href="#">Blog Details</a>
+                                    </li>
+                                    
+                                </ul>
+                            </li>
+                            <li>
+                                Pages<i class='bx bx-chevron-down' >
+                                </i>
+                                <ul >
+                                    <li>
+                                        <a href="#">About Us</a>
+                                    </li>
+                                    
+                                    <li>
+                                        <a href="#">Faqs</a>
+                                    </li>
+                                    
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">Contact</a>
+                            </li>
+                        </ul>
+                        <span>|</span>
+
+                    </div>
+                    <div class="col-xl-4 col-lg-3  right d-lg-flex d-none justify-content-end text-end gap-3 align-items-center">
+                        <small>
+                            <i class="bi bi-fire"></i> Deal</small>
+                        <span>
+                            <i class="bi bi-star-fill"></i>
+                        </span>
+                        
+                        <a href="./whishlist.html">
+                            <div class=" position-relative">
+                                <span class="fs-4"><i class="bi bi-heart"></i></span>
+                                <span>
+                                    01
+                                </span>
+                            </div>
+                        </a>
+                        <span><i class="bi bi-star-fill"></i></span>
+                        <button>
+                            <a href="./cart.html">
+                                <span>
+                                    01
+                                </span>
+                                <i class="bi bi-bag-fill"></i>
+                            </a>
+                        </button>
+                    </div>
+
+                    <!-- MOBILE MENU -->
+                    <div class="col-6 d-lg-none py-2">
+                        <a href="./index.html">
+                            <img src="./assets/logo/logo.png">
+                        </a>
+                    </div>
+                    <div class="col-6 d-lg-none d-flex  justify-content-end gap-3 py-2">
+                        <button id="cartbtn">
+                            <a href="./cart.html">
+                                <i class="bi bi-bag-fill"></i>
+                            </a>
+                        </button>
+                        <button  id="burgerbtn">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </button>
+                    </div>
+
+                     <!-- END OF MOBILE MENU -->
+                </div>
+            </div>
+        </div>
+       
+        <div class=" row " id="burgermenu">
+            <div class="col-7 col-sm-6  px-3 py-4 menu">
+               
+                    <div class=" position-relative" >
+                        <input type="search" placeholder=" Search Here" id="searchh">
+                        <button id="searchbtnh"><i class="bi bi-search"></i></button>
+                    </div>   
+               
+                    <div class="py-5 px-1">
+                        <input type="radio" name="menu" id="menur"  checked>
+                        <label for="menur" id="menurl" class=" me-2">Menu</label>
+                        <input type="radio" name="menu" id="catr">
+                        <label for="catr" id="catrl">Category</label>
+                        <div id="burgermenumenu">
+                            <ul class="d-flex justify-content-center flex-column  m-0 px-0 h-100">
+                                <li>
+                                    Home<i class='bx bx-chevron-down' ></i>
+                                </li>
+                                <ul >
+                                    <li>
+                                        <a href="./index.html">Home 01</a>
+                                    </li>
+                                    
+                                    <li>
+                                        <a href="./index.html">Home 02</a>
+                                    </li>
+                                    
+                                </ul>
+                                <li>
+                                    Shop<i class='bx bx-chevron-down' ></i>
+                                </li>
+                                <ul >
+                                    <li>
+                                        <a href="./shop.html">Our Shop</a>
+                                    </li>
+                                    
+                                    <li>
+                                        <a href="./product-details.html">Product Details</a>
+                                    </li>
+                                    <li>
+                                        <a href="./cart.html">Cart</a>
+                                    </li>
+                                    <li>
+                                        <a href="./checkout.html">Checkout</a>
+                                    </li>
+                                    <li>
+                                        <a href="./whishlist.html">Wishlist</a>
+                                    </li>
+                                    
+                                </ul>
+                                <li>
+                                    Blog<i class='bx bx-chevron-down' ></i>
+                                </li>
+                                <ul >
+                                    <li>
+                                        <a href="#">Our Blog</a>
+                                    </li>
+                                    
+                                    <li>
+                                        <a href="#">Blog Details</a>
+                                    </li>
+                                    
+                                </ul>
+                                <li>
+                                    Pages<i class='bx bx-chevron-down' >
+                                    </i>
+                                </li>
+                                <ul >
+                                    <li>
+                                        <a href="#">About Us</a>
+                                    </li>
+                                    
+                                    <li>
+                                        <a href="#">Faqs</a>
+                                    </li>
+                                    
+                                </ul>
+                                <li>
+                                    <a href="#">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div id="burgercat">
+                            <ul>
+
+                                <li>
+                                    <a href="#">
+                                        <img src="./assets/header/shirt.png">
+                                        Men Shirts
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="./assets/header/denim.png">
+                                        Denim Jeans
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="./assets/header/suit.png">
+                                        Casual Suits
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="./assets/header/dress.png">
+                                        Summer Dresses
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="./assets/header/sweaters.png">
+                                        Sweaters
+                                    </a>
+                                </li>
+                    
+                                        <li>
+                                        <a href="#">
+                                            <img src="./assets/header/jacket.png">
+                                            Jackets
+                                        </a>
+                                    </li>
+                                    
+                                
+                            </ul>
+                        </div>
+                            <div class="row burgerbot">
+                                <div class="col-2 ">
+                                    <i class="bi bi-headset fs-1"></i>
+                                </div>
+                                <div class="col-10 ">
+                                    <p>24/7 Support
+                                    </p>
+                                    <h6>+94 123 4567 894</h6>
+                                </div>
+                            </div>
+                    </div>
+            </div>
+            <div class="col" id="emptyspace">
+
+            </div>
+        </div>
+    </header>
+     
+    <!-- END OF HEADER -->
+
+    
+    <!-- SECTION -->
+
+    <section >
+        <div class="container-fluid">
+            <div class="container px-0">
+                <div class="swiper mySwiper0 ">
+                    <div class="swiper-wrapper cardscontainer">
+                      <div class="swiper-slide">
+
+                        <div class="row gap-lg-0 gap-5" id="sc1">
+
+                            <div class="col-lg-7 col-12 px-5">
+                                <h6>
+                                    Best for your Categories
+                                </h6>
+                                <h1>
+                                    Exclusive Collection in <small>Our Online</small> Store
+                                </h1>
+                                <p>
+                                    Discover our exclusive collection available only in our online store.
+                                    Shop now for unique and premium items that you won't find anywhere else.
+                                </p>
+                                <div class="d-flex align-items-center justify-content-lg-between flex-md-row flex-column gap-3">
+                                    <div class="d-flex gap-2 justify-content-center align-items-center">
+                                        <div>
+                                            <h1>$</h1>
+                                        </div>
+                                        <div>
+                                            <p class=" fw-semibold m-0">
+                                                Discount Price
+                                            </p>
+                                            <h2>140.00</h2>
+                            
+                                        </div>
+                                    </div>
+                                    <img src="./assets/section/line-1.png">
+                                    <a href="#">Shop Now</a>                
+                    
+                                </div>
+                            </div>
+    
+                            <div class="col-lg-5 col-12 dottedbg">
+                                <img src="./assets/section/girl1.jpg">
+                            </div>
+                        </div>
+    
+                      </div>
+
+
+                      <div class="swiper-slide">
+                        
+                    
+                        <div class="row gap-lg-0 gap-5" id="sc2">
+
+                            <div class="col-lg-7 col-12 px-5">
+                                <h6>
+                                    Best for your Categories
+                                </h6>
+                                <h1>
+                                    Exclusive Collection in <small>Our Online</small> Store
+                                </h1>
+                                <p>
+                                    Discover our exclusive collection available only in our online store.
+                                    Shop now for unique and premium items that you won't find anywhere else.
+                                </p>
+                                <div class="d-flex align-items-center justify-content-lg-between flex-md-row flex-column gap-3">
+                                    <div class="d-flex gap-2 justify-content-center align-items-center">
+                                        <div>
+                                            <h1>$</h1>
+                                        </div>
+                                        <div>
+                                            <p class=" fw-semibold m-0">
+                                                Discount Price
+                                            </p>
+                                            <h2>140.00</h2>
+                            
+                                        </div>
+                                    </div>
+                                    <img src="./assets/section/line-1.png">
+                                    <a href="./shop.html">Shop Now</a>                
+                    
+                                </div>
+                            </div>
+    
+                            <div class="col-lg-5 col-12 dottedbg ">
+                                <img src="./assets/shop/Products/1.png">
+                            </div>
+                        </div>
+                        
+                    
+                    </div>
+                      <div class="swiper-slide">
+                        
+                    
+                    
+                        <div class="row gap-lg-0 gap-5" id="sc3">
+
+                            <div class="col-lg-7 col-12 px-5">
+                                <h6>
+                                    Best for your Categories
+                                </h6>
+                                <h1>
+                                    Exclusive Collection in <small>Our Online</small> Store
+                                </h1>
+                                <p>
+                                    Discover our exclusive collection available only in our online store.
+                                    Shop now for unique and premium items that you won't find anywhere else.
+                                </p>
+                                <div class="d-flex align-items-center justify-content-lg-between flex-md-row flex-column gap-3">
+                                    <div class="d-flex gap-2 justify-content-center align-items-center">
+                                        <div>
+                                            <h1>$</h1>
+                                        </div>
+                                        <div>
+                                            <p class=" fw-semibold m-0">
+                                                Discount Price
+                                            </p>
+                                            <h2>140.00</h2>
+                            
+                                        </div>
+                                    </div>
+                                    <img src="./assets/section/line-1.png">
+                                    <a href="./shop.html">Shop Now</a>                
+                    
+                                </div>
+                            </div>
+    
+                            <div class="col-lg-5 col-12 dottedbg ">
+                                <img src="./assets/section/3.png">
+                            </div>
+                        </div>
+                    
+                    </div>
+                      
+                    </div>
+
+                        <div class="swiper-pagination"></div>    
+                  </div>
+
+
+
+                
+            </div>
+        </div>
+    </section>
+    <!-- END OF SECTION -->
+    <!-- marquee -->
+    <div class= "container-fluid px-0">
+        <marquee style="background-color: var(--bgdarkblue); color:var(--bgwhite);" onmouseover="this.stop()" onmouseout="this.start()" behaviour="scroll" scrollamount="20">
+            <div class="d-flex justify-content-start align-items-center gap-4 py-4">
+                <span><img src="./assets/marquee/Vector.png"></span>
+                <h1>Jackets</h1>
+                <span><img src="./assets/marquee/Vector.png"></span>
+                
+                <h1>MEN</h1>
+                <span><img src="./assets/marquee/Vector.png"></span>
+                
+                <h1>WOMEN</h1>
+                <span><img src="./assets/marquee/Vector.png"></span>
+                
+                <h1>SHIRTS</h1>
+                <span><img src="./assets/marquee/Vector.png"></span>
+                
+                
+                <h1>JEANS</h1>
+                <span><img src="./assets/marquee/Vector.png"></span>
+
+                <h1>BLAZER</h1>
+                <span><img src="./assets/marquee/Vector.png"></span>
+                <h1>Jackets</h1>
+                <span><img src="./assets/marquee/Vector.png"></span>
+                
+                <h1>MEN</h1>
+                <span><img src="./assets/marquee/Vector.png"></span>
+                
+                <h1>WOMEN</h1>
+                <span><img src="./assets/marquee/Vector.png"></span>
+                
+                <h1>SHIRTS</h1>
+                <span><img src="./assets/marquee/Vector.png"></span>
+                
+                
+                <h1>JEANS</h1>
+                <span><img src="./assets/marquee/Vector.png"></span>
+
+                <h1>BLAZER</h1>
+            </div>
+        </marquee>
+    </div>
+        <!--end of marquee -->
+        <!-- Shipping -->
+    <div class="container shipping my-5 fadcard" id="ship">
+        <div class="row">
+
+            
+            <div class=" col-xl-3 col-md-6 col-12  ">
+                <div class="row  justify-content-center ">
+                    <div class="col-md-4 col-3">
+                        <span >
+                            <i class="bi bi-truck"></i>
+                        </span>
+                    </div>
+                    <div class="col-xxl-7 col-md-8 col-5 px-0">
+                        <h6>Free Shipping</h6>
+                        <p>You get your items delivered without any extra cost.</p>
+                    </div>
+                    <div class="col-xxl-1 d-xxl-block d-none">
+                        <img src="./assets/shipping/divider.png">
+                    </div>
+                </div>
+            </div>
+            
+            <div class=" col-xl-3 col-md-6 col-12 ">
+                <div class="row  justify-content-center ">
+                    <div class="col-md-4 col-3">
+                        <span >
+                            <i class="bi bi-mic-fill"></i>                        </span>
+                    </div>
+                    <div class="col-xxl-7 col-md-8 col-5 px-0">
+                        <h6>Great Support 24/7
+                        </h6>
+                        <p>Our customer support team is available around the clock</p>
+                    </div>
+                    <div class="col-xxl-1 d-xxl-block d-none">
+                        <img src="./assets/shipping/divider.png">
+                    </div>
+                </div>
+            </div>
+            
+            <div class=" col-xl-3 col-md-6 col-12 ">
+                <div class="row  justify-content-center ">
+                    <div class="col-md-4 col-3">
+                        <span >
+                            <i class="bi bi-hand-thumbs-up-fill"></i>                        </span>
+                    </div>
+                    <div class="col-xxl-7 col-md-8 col-5 px-0">
+                        <h6>
+                            Return Available</h6>
+                        <p>Making it easy to return any items if you're not satisfied.</p>
+                    </div>
+                    <div class="col-xxl-1 d-xxl-block d-none">
+                        <img src="./assets/shipping/divider.png">
+                    </div>
+                </div>
+            </div>
+            
+            <div class=" col-xl-3 col-md-6 col-12 ">
+                <div class="row  justify-content-center ">
+                    <div class="col-md-4 col-3">
+                        <span >
+                            <i class="bi bi-currency-dollar"></i>                        </span>
+                    </div>
+                    <div class="col-xxl-7 col-md-8 col-5 px-0">
+                        <h6>Secure Payment
+                        </h6>
+                        <p>Shop with confidence knowing that our secure payment.</p>
+                    </div>
+                    <div class="col-xxl-1 d-xxl-block d-none">
+                        <img src="./assets/shipping/divider.png">
+                    </div>
+                </div>
+            </div>
+
+           
+            
+        </div>
+    </div>
+    <!--END SHIPPING -->
+    <!-- categories slider -->
+    <div class="container-fluid position-relative px-5 my-5"id="browsetopcat">
+        <div class="container">
+            <div class="row align-items-center my-5">
+
+                <div class=" col-md-6 col-12  mb-md-4 mb-5 fadcard2">
+                    <small class="ccrimson fs-6">
+                        <span class="cdarkblue">
+                            ☆
+                        </span>
+                        
+                        Categories</small>
+                        <h1 class=" text-nowrap">Browse Top Category
+                        </h1>
+                    </div>
+                    <div class="col-md-6 col-12 catbtns d-flex justify-content-md-end justify-content-start  gap-2 fadcard3">
+                        <div class="swiper-button-prev1"><i class="bi bi-arrow-left"></i></div>
+                      <div class="swiper-button-next1" ><i class="bi bi-arrow-right"></i></div>
+                  </div>
+            </div>
+        </div>
+        <div class="swiper mySwiper" >
+            
+            <div class="swiper-wrapper fadcard">
+              <div class="swiper-slide">
+
+                <div class="outter">
+                    <img src="./assets/topbrowsecat/1.png">
+                </div>
+                    <a href="#">Men Shirts</a>
+              </div>
+
+              
+              <div class="swiper-slide">
+
+                <div class="outter">
+                    <img src="./assets/topbrowsecat/2.png">
+                </div>
+                    <a href="#">Denim Jeans</a>
+              </div>
+
+              
+              <div class="swiper-slide">
+
+                <div class="outter">
+                    <img src="./assets/topbrowsecat/3.png">
+                </div>
+                    <a href="#">Casual Suits</a>
+              </div>
+
+              
+              <div class="swiper-slide">
+
+                <div class="outter">
+                    <img src="./assets/topbrowsecat/4.png">
+                </div>
+                    <a href="#">Summer Dress</a>
+              </div>
+
+              
+              <div class="swiper-slide">
+
+                <div class="outter">
+                    <img src="./assets/topbrowsecat/5.png">
+                </div>
+                    <a href="#">Sweaters</a>
+              </div>
+
+              
+              <div class="swiper-slide">
+
+                <div class="outter">
+                    <img src="./assets/topbrowsecat/6.png">
+                </div>
+                    <a href="#">Jackets</a>
+              </div>
+
+              
+              <div class="swiper-slide">
+
+                <div class="outter">
+                    <img src="./assets/topbrowsecat/8.png">
+                </div>
+                    <a href="#">Coats</a>
+              </div>
+
+              
+            </div>
+            
+          </div>
+          
+        
+    </div>
+    <!-- end of categories slider -->
+
+    <!-- discounts -->
+
+    <div class="container my-5" >
+        <div class="row discounts fadcard">
+            <div class="col-lg-6 col-12 my-4">
+                <div class="row position-relative inner bgcard1">
+                    <div class=" col-8 ">
+                        <div class="text">
+
+                            <h2>UP TO</h2>
+                            <h1>50%</h1>
+                            <h3>Exclusive Kids & Adults Summer Outfits</h3>
+                            <a href="#">Shop Now</a>
+                        </div>
+                        
+                    </div>
+                    <div class=" d-md-flex d-none image">
+                        <img src="./assets/discountsbanner/1.png" >
+                    </div>
+                    <div class="vectors">
+                        <div class="row justify-content-end align-items-start">
+                            <div class="col-1">
+
+                                <img src="./assets/discountsbanner/discount.png" >
+                            </div>
+                            <div class="col-6">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+          
+            <div class="col-lg-6 col-12 my-4">
+                <div class="row position-relative inner bgcard2">
+                    <div class="col-8 ">
+                        <div class="text">
+
+                            <h2>UP TO</h2>
+                            <h1>70%</h1>
+                            <h3>Exclusive Kids & Adults Summer Outfits</h3>
+                            <a href="#">Shop Now</a>
+                        </div>
+                        
+                    </div>
+                    <div class=" d-md-flex d-none image">
+                        <img src="./assets/discountsbanner/2.png" >
+                    </div>
+                    <div class="vectors">
+                        <div class="row justify-content-end align-items-start">
+                            <div class="col-1">
+
+                                <img src="./assets/discountsbanner/discount.png" >
+                            </div>
+                            <div class="col-6">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+          
+            
+          
+            
+        </div>
+    </div>
+
+    <!-- end of discounts -->
+
+    <!-- FEATURED PRODUCTS -->
+     <div class="container">
+        <div class="row featuredprod justify-content-between align-items-center">
+            <div class=" col-md-6 col-12  mb-md-4 mb-5 fadcard2">
+                <small class="ccrimson fs-6">
+                    <span class="cdarkblue">
+                        ☆
+                    </span>
+                    
+                    Feature Products
+                    </small>
+                    <h1 class=" text-nowrap">
+                        Our Features Collection
+                    </h1>
+                </div>
+                <div class="col-md-6 col-12 labelcont mx-3 fadcard3">
+                    <input type="radio" name="featured" id="bseller" checked>
+                    <input type="radio" name="featured" id="nproducts">
+                    <input type="radio" name="featured" id="sproducts">
+                    <label for="bseller" class="active">Best Sellers</label>
+                    <label for="nproducts">New Products</label>
+                    <label for="sproducts">Sale Products</label>
+                </div>
+        </div>
+            <div class="content .content1 my-5">
+                
+                <div class="row" id="bseller1"> 
+                    <div class="col-lg-3 col-md-6 col-12 my-2 fadcard">
+                        <div class="imgcontainer position-relative">
+                            <img src="./assets/cards/1.png">
+                            <span>10% OFF</span>
+                            <div class="iconscont">
+                                <a href="#"><i class="bi bi-heart-fill"></i></a>
+                                <a href="#"><i class="bi bi-eye-fill"></i></a>
+                            </div>
+                            <div class="hiddenbtn">
+                                <a href="#">
+                                    <i class="bi bi-basket2"></i>
+                                    ADD TO CART
+                                </a>
+                            </div>
+                        </div>
+                        <div class="text my-2 px-1">
+                            <div class="d-flex justify-content-between ">
+                                <div class="t1">
+                                    <span class="ccrimson"><i class="bi bi-star-fill"></i></span>
+                                    <span class="ccrimson"><i class="bi bi-star-fill"></i></span>
+                                    <span class="ccrimson"><i class="bi bi-star-fill"></i></span>
+                                    <span class="ccrimson"><i class="bi bi-star-fill"></i></span>
+                                    <span class="cgrey"><i class="bi bi-star-fill"></i></span>
+                                    <a href="#">(50)</a>
+                                </div>
+                                <stroke class=" text-decoration-line-through cgrey">$67.00</stroke>
+                            </div>
+                        
+                            <div class="d-flex justify-content-between  t2 my-1 px-0">
+                                <a href="#">Cozy knit sweater with jacket</a>
+                                <h6>$23.00</h6>
+                            </div>
+                            
+                        </div>
+                        <div>
+
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-3 col-md-6 col-12 my-2 fadcard">
+                        <div class="imgcontainer position-relative">
+                            <img src="./assets/cards/2.png">
+                            <span>10% OFF</span>
+                            <div class="iconscont">
+                                <a href="#"><i class="bi bi-heart-fill"></i></a>
+                                <a href="#"><i class="bi bi-eye-fill"></i></a>
+                            </div>
+                            <div class="hiddenbtn">
+                                <a href="#">
+                                    <i class="bi bi-basket2"></i>
+                                    ADD TO CART
+                                </a>
+                            </div>
+                        </div>
+                        <div class="text my-2 px-1">
+                            <div class="d-flex justify-content-between ">
+                                <div class="t1">
+                                    <span class="ccrimson"><i class="bi bi-star-fill"></i></span>
+                                    <span class="ccrimson"><i class="bi bi-star-fill"></i></span>
+                                    <span class="ccrimson"><i class="bi bi-star-fill"></i></span>
+                                    <span class="ccrimson"><i class="bi bi-star-fill"></i></span>
+                                    <span class="cgrey"><i class="bi bi-star-fill"></i></span>
+                                    <a href="#">(50)</a>
+                                </div>
+                                <stroke class=" text-decoration-line-through cgrey">$67.00</stroke>
+                            </div>
+                        
+                            <div class="d-flex justify-content-between  t2 my-1 px-0">
+                                <a href="#">Cozy knit sweater with jacket</a>
+                                <h6>$23.00</h6>
+                            </div>
+                            
+                        </div>
+                        <div>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-12 my-2 fadcard">
+                        <div class="imgcontainer position-relative">
+                            <img src="./assets/cards/3.png">
+                            <span>10% OFF</span>
+                            <div class="iconscont">
+                                <a href="#"><i class="bi bi-heart-fill"></i></a>
+                                <a href="#"><i class="bi bi-eye-fill"></i></a>
+                            </div>
+                            <div class="hiddenbtn">
+                                <a href="#">
+                                    <i class="bi bi-basket2"></i>
+                                    ADD TO CART
+                                </a>
+                            </div>
+                        </div>
+                        <div class="text my-2 px-1">
+                            <div class="d-flex justify-content-between ">
+                                <div class="t1">
+                                    <span class="ccrimson"><i class="bi bi-star-fill"></i></span>
+                                    <span class="ccrimson"><i class="bi bi-star-fill"></i></span>
+                                    <span class="ccrimson"><i class="bi bi-star-fill"></i></span>
+                                    <span class="ccrimson"><i class="bi bi-star-fill"></i></span>
+                                    <span class="cgrey"><i class="bi bi-star-fill"></i></span>
+                                    <a href="#">(50)</a>
+                                </div>
+                                <stroke class=" text-decoration-line-through cgrey">$67.00</stroke>
+                            </div>
+                        
+                            <div class="d-flex justify-content-between  t2 my-1 px-0">
+                                <a href="#">Cozy knit sweater with jacket</a>
+                                <h6>$23.00</h6>
+                            </div>
+                            
+                        </div>
+                        <div>
+
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-12 my-2 fadcard">
+                        <div class="imgcontainer position-relative">
+                            <img src="./assets/cards/4.png">
+                            <span>10% OFF</span>
+                            <div class="iconscont">
+                                <a href="#"><i class="bi bi-heart-fill"></i></a>
+                                <a href="#"><i class="bi bi-eye-fill"></i></a>
+                            </div>
+                            <div class="hiddenbtn">
+                                <a href="#">
+                                    <i class="bi bi-basket2"></i>
+                                    ADD TO CART
+                                </a>
+                            </div>
+                        </div>
+                        <div class="text my-2 px-1">
+                            <div class="d-flex justify-content-between ">
+                                <div class="t1">
+                                    <span class="ccrimson"><i class="bi bi-star-fill"></i></span>
+                                    <span class="ccrimson"><i class="bi bi-star-fill"></i></span>
+                                    <span class="ccrimson"><i class="bi bi-star-fill"></i></span>
+                                    <span class="ccrimson"><i class="bi bi-star-fill"></i></span>
+                                    <span class="cgrey"><i class="bi bi-star-fill"></i></span>
+                                    <a href="#">(50)</a>
+                                </div>
+                                <stroke class=" text-decoration-line-through cgrey">$67.00</stroke>
+                            </div>
+                        
+                            <div class="d-flex justify-content-between  t2 my-1 px-0">
+                                <a href="#">Cozy knit sweater with jacket</a>
+                                <h6>$23.00</h6>
+                            </div>
+                            
+                        </div>
+                        <div>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-12 my-2 fadcard">
+                        <div class="imgcontainer position-relative">
+                            <img src="./assets/cards/1.png">
+                            <span>10% OFF</span>
+                            <div class="iconscont">
+                                <a href="#"><i class="bi bi-heart-fill"></i></a>
+                                <a href="#"><i class="bi bi-eye-fill"></i></a>
+                            </div>
+                            <div class="hiddenbtn">
+                                <a href="#">
+                                    <i class="bi bi-basket2"></i>
+                                    ADD TO CART
+                                </a>
+                            </div>
+                        </div>
+                        <div class="text my-2 px-1">
+                            <div class="d-flex justify-content-between ">
+                                <div class="t1">
+                                    <span class="ccrimson"><i class="bi bi-star-fill"></i></span>
+                                    <span class="ccrimson"><i class="bi bi-star-fill"></i></span>
+                                    <span class="ccrimson"><i class="bi bi-star-fill"></i></span>
+                                    <span class="ccrimson"><i class="bi bi-star-fill"></i></span>
+                                    <span class="cgrey"><i class="bi bi-star-fill"></i></span>
+                                    <a href="#">(50)</a>
+                                </div>
+                                <stroke class=" text-decoration-line-through cgrey">$67.00</stroke>
+                            </div>
+                        
+                            <div class="d-flex justify-content-between  t2 my-1 px-0">
+                                <a href="#">Cozy knit sweater with jacket</a>
+                                <h6>$23.00</h6>
+                            </div>
+                            
+                        </div>
+                        <div>
+
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-3 col-md-6 col-12 my-2 fadcard">
+                        <div class="imgcontainer position-relative">
+                            <img src="./assets/cards/2.png">
+                            <span>10% OFF</span>
+                            <div class="iconscont">
+                                <a href="#"><i class="bi bi-heart-fill"></i></a>
+                                <a href="#"><i class="bi bi-eye-fill"></i></a>
+                            </div>
+                            <div class="hiddenbtn">
+                                <a href="#">
+                                    <i class="bi bi-basket2"></i>
+                                    ADD TO CART
+                                </a>
+                            </div>
+                        </div>
+                        <div class="text my-2 px-1">
+                            <div class="d-flex justify-content-between ">
+                                <div class="t1">
+                                    <span class="ccrimson"><i class="bi bi-star-fill"></i></span>
+                                    <span class="ccrimson"><i class="bi bi-star-fill"></i></span>
+                                    <span class="ccrimson"><i class="bi bi-star-fill"></i></span>
+                                    <span class="ccrimson"><i class="bi bi-star-fill"></i></span>
+                                    <span class="cgrey"><i class="bi bi-star-fill"></i></span>
+                                    <a href="#">(50)</a>
+                                </div>
+                                <stroke class=" text-decoration-line-through cgrey">$67.00</stroke>
+                            </div>
+                        
+                            <div class="d-flex justify-content-between  t2 my-1 px-0">
+                                <a href="#">Cozy knit sweater with jacket</a>
+                                <h6>$23.00</h6>
+                            </div>
+                            
+                        </div>
+                        <div>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-12 my-2 fadcard">
+                        <div class="imgcontainer position-relative">
+                            <img src="./assets/cards/3.png">
+                            <span>10% OFF</span>
+                            <div class="iconscont">
+                                <a href="#"><i class="bi bi-heart-fill"></i></a>
+                                <a href="#"><i class="bi bi-eye-fill"></i></a>
+                            </div>
+                            <div class="hiddenbtn">
+                                <a href="#">
+                                    <i class="bi bi-basket2"></i>
+                                    ADD TO CART
+                                </a>
+                            </div>
+                        </div>
+                        <div class="text my-2 px-1">
+                            <div class="d-flex justify-content-between ">
+                                <div class="t1">
+                                    <span class="ccrimson"><i class="bi bi-star-fill"></i></span>
+                                    <span class="ccrimson"><i class="bi bi-star-fill"></i></span>
+                                    <span class="ccrimson"><i class="bi bi-star-fill"></i></span>
+                                    <span class="ccrimson"><i class="bi bi-star-fill"></i></span>
+                                    <span class="cgrey"><i class="bi bi-star-fill"></i></span>
+                                    <a href="#">(50)</a>
+                                </div>
+                                <stroke class=" text-decoration-line-through cgrey">$67.00</stroke>
+                            </div>
+                        
+                            <div class="d-flex justify-content-between  t2 my-1 px-0">
+                                <a href="#">Cozy knit sweater with jacket</a>
+                                <h6>$23.00</h6>
+                            </div>
+                            
+                        </div>
+                        <div>
+
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-12 my-2 fadcard">
+                        <div class="imgcontainer position-relative">
+                            <img src="./assets/cards/4.png">
+                            <span>10% OFF</span>
+                            <div class="iconscont">
+                                <a href="#"><i class="bi bi-heart-fill"></i></a>
+                                <a href="#"><i class="bi bi-eye-fill"></i></a>
+                            </div>
+                            <div class="hiddenbtn">
+                                <a href="#">
+                                    <i class="bi bi-basket2"></i>
+                                    ADD TO CART
+                                </a>
+                            </div>
+                        </div>
+                        <div class="text my-2 px-1">
+                            <div class="d-flex justify-content-between ">
+                                <div class="t1">
+                                    <span class="ccrimson"><i class="bi bi-star-fill"></i></span>
+                                    <span class="ccrimson"><i class="bi bi-star-fill"></i></span>
+                                    <span class="ccrimson"><i class="bi bi-star-fill"></i></span>
+                                    <span class="ccrimson"><i class="bi bi-star-fill"></i></span>
+                                    <span class="cgrey"><i class="bi bi-star-fill"></i></span>
+                                    <a href="#">(50)</a>
+                                </div>
+                                <stroke class=" text-decoration-line-through cgrey">$67.00</stroke>
+                            </div>
+                        
+                            <div class="d-flex justify-content-between  t2 my-1 px-0">
+                                <a href="#">Cozy knit sweater with jacket</a>
+                                <h6>$23.00</h6>
+                            </div>
+                            
+                        </div>
+                        <div>
+
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="row" id="nproducts1"> 
+                    <div class="col-lg-3 col-md-6 col-12 my-2 fadcard">
+                        <div class="imgcontainer position-relative">
+                            <img src="./assets/cards/3.png">
+                            <span>10% OFF</span>
+                            <div class="iconscont">
+                                <a href="#"><i class="bi bi-heart-fill"></i></a>
+                                <a href="#"><i class="bi bi-eye-fill"></i></a>
+                            </div>
+                            <div class="hiddenbtn">
+                                <a href="#">
+                                    <i class="bi bi-basket2"></i>
+                                    ADD TO CART
+                                </a>
+                            </div>
+                        </div>
+                        <div class="text my-2 px-1">
+                            <div class="d-flex justify-content-between ">
+                                <div class="t1">
+                                    <span class="ccrimson"><i class="bi bi-star-fill"></i></span>
+                                    <span class="ccrimson"><i class="bi bi-star-fill"></i></span>
+                                    <span class="ccrimson"><i class="bi bi-star-fill"></i></span>
+                                    <span class="ccrimson"><i class="bi bi-star-fill"></i></span>
+                                    <span class="cgrey"><i class="bi bi-star-fill"></i></span>
+                                    <a href="#">(50)</a>
+                                </div>
+                                <stroke class=" text-decoration-line-through cgrey">$67.00</stroke>
+                            </div>
+                        
+                            <div class="d-flex justify-content-between  t2 my-1 px-0">
+                                <a href="#">Cozy knit sweater with jacket</a>
+                                <h6>$23.00</h6>
+                            </div>
+                            
+                        </div>
+                        <div>
+
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-3 col-md-6 col-12 my-2 fadcard">
+                        <div class="imgcontainer position-relative">
+                            <img src="./assets/cards/4.png">
+                            <span>10% OFF</span>
+                            <div class="iconscont">
+                                <a href="#"><i class="bi bi-heart-fill"></i></a>
+                                <a href="#"><i class="bi bi-eye-fill"></i></a>
+                            </div>
+                            <div class="hiddenbtn">
+                                <a href="#">
+                                    <i class="bi bi-basket2"></i>
+                                    ADD TO CART
+                                </a>
+                            </div>
+                        </div>
+                        <div class="text my-2 px-1">
+                            <div class="d-flex justify-content-between ">
+                                <div class="t1">
+                                    <span class="ccrimson"><i class="bi bi-star-fill"></i></span>
+                                    <span class="ccrimson"><i class="bi bi-star-fill"></i></span>
+                                    <span class="ccrimson"><i class="bi bi-star-fill"></i></span>
+                                    <span class="ccrimson"><i class="bi bi-star-fill"></i></span>
+                                    <span class="cgrey"><i class="bi bi-star-fill"></i></span>
+                                    <a href="#">(50)</a>
+                                </div>
+                                <stroke class=" text-decoration-line-through cgrey">$67.00</stroke>
+                            </div>
+                        
+                            <div class="d-flex justify-content-between  t2 my-1 px-0">
+                                <a href="#">Cozy knit sweater with jacket</a>
+                                <h6>$23.00</h6>
+                            </div>
+                            
+                        </div>
+                        <div>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-12 my-2 fadcard">
+                        <div class="imgcontainer position-relative">
+                            <img src="./assets/cards/1.png">
+                            <span>10% OFF</span>
+                            <div class="iconscont">
+                                <a href="#"><i class="bi bi-heart-fill"></i></a>
+                                <a href="#"><i class="bi bi-eye-fill"></i></a>
+                            </div>
+                            <div class="hiddenbtn">
+                                <a href="#">
+                                    <i class="bi bi-basket2"></i>
+                                    ADD TO CART
+                                </a>
+                            </div>
+                        </div>
+                        <div class="text my-2 px-1">
+                            <div class="d-flex justify-content-between ">
+                                <div class="t1">
+                                    <span class="ccrimson"><i class="bi bi-star-fill"></i></span>
+                                    <span class="ccrimson"><i class="bi bi-star-fill"></i></span>
+                                    <span class="ccrimson"><i class="bi bi-star-fill"></i></span>
+                                    <span class="ccrimson"><i class="bi bi-star-fill"></i></span>
+                                    <span class="cgrey"><i class="bi bi-star-fill"></i></span>
+                                    <a href="#">(50)</a>
+                                </div>
+                                <stroke class=" text-decoration-line-through cgrey">$67.00</stroke>
+                            </div>
+                        
+                            <div class="d-flex justify-content-between  t2 my-1 px-0">
+                                <a href="#">Cozy knit sweater with jacket</a>
+                                <h6>$23.00</h6>
+                            </div>
+                            
+                        </div>
+                        <div>
+
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-12 my-2 fadcard">
+                        <div class="imgcontainer position-relative">
+                            <img src="./assets/cards/2.png">
+                            <span>10% OFF</span>
+                            <div class="iconscont">
+                                <a href="#"><i class="bi bi-heart-fill"></i></a>
+                                <a href="#"><i class="bi bi-eye-fill"></i></a>
+                            </div>
+                            <div class="hiddenbtn">
+                                <a href="#">
+                                    <i class="bi bi-basket2"></i>
+                                    ADD TO CART
+                                </a>
+                            </div>
+                        </div>
+                        <div class="text my-2 px-1">
+                            <div class="d-flex justify-content-between ">
+                                <div class="t1">
+                                    <span class="ccrimson"><i class="bi bi-star-fill"></i></span>
+                                    <span class="ccrimson"><i class="bi bi-star-fill"></i></span>
+                                    <span class="ccrimson"><i class="bi bi-star-fill"></i></span>
+                                    <span class="ccrimson"><i class="bi bi-star-fill"></i></span>
+                                    <span class="cgrey"><i class="bi bi-star-fill"></i></span>
+                                    <a href="#">(50)</a>
+                                </div>
+                                <stroke class=" text-decoration-line-through cgrey">$67.00</stroke>
+                            </div>
+                        
+                            <div class="d-flex justify-content-between  t2 my-1 px-0">
+                                <a href="#">Cozy knit sweater with jacket</a>
+                                <h6>$23.00</h6>
+                            </div>
+                            
+                        </div>
+                        <div>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-12 my-2 fadcard">
+                        <div class="imgcontainer position-relative">
+                            <img src="./assets/cards/3.png">
+                            <span>10% OFF</span>
+                            <div class="iconscont">
+                                <a href="#"><i class="bi bi-heart-fill"></i></a>
+                                <a href="#"><i class="bi bi-eye-fill"></i></a>
+                            </div>
+                            <div class="hiddenbtn">
+                                <a href="#">
+                                    <i class="bi bi-basket2"></i>
+                                    ADD TO CART
+                                </a>
+                            </div>
+                        </div>
+                        <div class="text my-2 px-1">
+                            <div class="d-flex justify-content-between ">
+                                <div class="t1">
+                                    <span class="ccrimson"><i class="bi bi-star-fill"></i></span>
+                                    <span class="ccrimson"><i class="bi bi-star-fill"></i></span>
+                                    <span class="ccrimson"><i class="bi bi-star-fill"></i></span>
+                                    <span class="ccrimson"><i class="bi bi-star-fill"></i></span>
+                                    <span class="cgrey"><i class="bi bi-star-fill"></i></span>
+                                    <a href="#">(50)</a>
+                                </div>
+                                <stroke class=" text-decoration-line-through cgrey">$67.00</stroke>
+                            </div>
+                        
+                            <div class="d-flex justify-content-between  t2 my-1 px-0">
+                                <a href="#">Cozy knit sweater with jacket</a>
+                                <h6>$23.00</h6>
+                            </div>
+                            
+                        </div>
+                        <div>
+
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-3 col-md-6 col-12 my-2 fadcard">
+                        <div class="imgcontainer position-relative">
+                            <img src="./assets/cards/4.png">
+                            <span>10% OFF</span>
+                            <div class="iconscont">
+                                <a href="#"><i class="bi bi-heart-fill"></i></a>
+                                <a href="#"><i class="bi bi-eye-fill"></i></a>
+                            </div>
+                            <div class="hiddenbtn">
+                                <a href="#">
+                                    <i class="bi bi-basket2"></i>
+                                    ADD TO CART
+                                </a>
+                            </div>
+                        </div>
+                        <div class="text my-2 px-1">
+                            <div class="d-flex justify-content-between ">
+                                <div class="t1">
+                                    <span class="ccrimson"><i class="bi bi-star-fill"></i></span>
+                                    <span class="ccrimson"><i class="bi bi-star-fill"></i></span>
+                                    <span class="ccrimson"><i class="bi bi-star-fill"></i></span>
+                                    <span class="ccrimson"><i class="bi bi-star-fill"></i></span>
+                                    <span class="cgrey"><i class="bi bi-star-fill"></i></span>
+                                    <a href="#">(50)</a>
+                                </div>
+                                <stroke class=" text-decoration-line-through cgrey">$67.00</stroke>
+                            </div>
+                        
+                            <div class="d-flex justify-content-between  t2 my-1 px-0">
+                                <a href="#">Cozy knit sweater with jacket</a>
+                                <h6>$23.00</h6>
+                            </div>
+                            
+                        </div>
+                        <div>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-12 my-2 fadcard">
+                        <div class="imgcontainer position-relative">
+                            <img src="./assets/cards/1.png">
+                            <span>10% OFF</span>
+                            <div class="iconscont">
+                                <a href="#"><i class="bi bi-heart-fill"></i></a>
+                                <a href="#"><i class="bi bi-eye-fill"></i></a>
+                            </div>
+                            <div class="hiddenbtn">
+                                <a href="#">
+                                    <i class="bi bi-basket2"></i>
+                                    ADD TO CART
+                                </a>
+                            </div>
+                        </div>
+                        <div class="text my-2 px-1">
+                            <div class="d-flex justify-content-between ">
+                                <div class="t1">
+                                    <span class="ccrimson"><i class="bi bi-star-fill"></i></span>
+                                    <span class="ccrimson"><i class="bi bi-star-fill"></i></span>
+                                    <span class="ccrimson"><i class="bi bi-star-fill"></i></span>
+                                    <span class="ccrimson"><i class="bi bi-star-fill"></i></span>
+                                    <span class="cgrey"><i class="bi bi-star-fill"></i></span>
+                                    <a href="#">(50)</a>
+                                </div>
+                                <stroke class=" text-decoration-line-through cgrey">$67.00</stroke>
+                            </div>
+                        
+                            <div class="d-flex justify-content-between  t2 my-1 px-0">
+                                <a href="#">Cozy knit sweater with jacket</a>
+                                <h6>$23.00</h6>
+                            </div>
+                            
+                        </div>
+                        <div>
+
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-12 my-2 fadcard">
+                        <div class="imgcontainer position-relative">
+                            <img src="./assets/cards/2.png">
+                            <span>10% OFF</span>
+                            <div class="iconscont">
+                                <a href="#"><i class="bi bi-heart-fill"></i></a>
+                                <a href="#"><i class="bi bi-eye-fill"></i></a>
+                            </div>
+                            <div class="hiddenbtn">
+                                <a href="#">
+                                    <i class="bi bi-basket2"></i>
+                                    ADD TO CART
+                                </a>
+                            </div>
+                        </div>
+                        <div class="text my-2 px-1">
+                            <div class="d-flex justify-content-between ">
+                                <div class="t1">
+                                    <span class="ccrimson"><i class="bi bi-star-fill"></i></span>
+                                    <span class="ccrimson"><i class="bi bi-star-fill"></i></span>
+                                    <span class="ccrimson"><i class="bi bi-star-fill"></i></span>
+                                    <span class="ccrimson"><i class="bi bi-star-fill"></i></span>
+                                    <span class="cgrey"><i class="bi bi-star-fill"></i></span>
+                                    <a href="#">(50)</a>
+                                </div>
+                                <stroke class=" text-decoration-line-through cgrey">$67.00</stroke>
+                            </div>
+                        
+                            <div class="d-flex justify-content-between  t2 my-1 px-0">
+                                <a href="#">Cozy knit sweater with jacket</a>
+                                <h6>$23.00</h6>
+                            </div>
+                            
+                        </div>
+                        <div>
+
+                        </div>
+                    </div>
+                </div>
+                
+                
+                <div class="row" id="sproducts1"> 
+                    <div class="col-lg-3 col-md-6 col-12 my-2 fadcard">
+                        <div class="imgcontainer position-relative">
+                            <img src="./assets/cards/4.png">
+                            <span>10% OFF</span>
+                            <div class="iconscont">
+                                <a href="#"><i class="bi bi-heart-fill"></i></a>
+                                <a href="#"><i class="bi bi-eye-fill"></i></a>
+                            </div>
+                            <div class="hiddenbtn">
+                                <a href="#">
+                                    <i class="bi bi-basket2"></i>
+                                    ADD TO CART
+                                </a>
+                            </div>
+                        </div>
+                        <div class="text my-2 px-1">
+                            <div class="d-flex justify-content-between ">
+                                <div class="t1">
+                                    <span class="ccrimson"><i class="bi bi-star-fill"></i></span>
+                                    <span class="ccrimson"><i class="bi bi-star-fill"></i></span>
+                                    <span class="ccrimson"><i class="bi bi-star-fill"></i></span>
+                                    <span class="ccrimson"><i class="bi bi-star-fill"></i></span>
+                                    <span class="cgrey"><i class="bi bi-star-fill"></i></span>
+                                    <a href="#">(50)</a>
+                                </div>
+                                <stroke class=" text-decoration-line-through cgrey">$67.00</stroke>
+                            </div>
+                        
+                            <div class="d-flex justify-content-between  t2 my-1 px-0">
+                                <a href="#">Cozy knit sweater with jacket</a>
+                                <h6>$23.00</h6>
+                            </div>
+                            
+                        </div>
+                        <div>
+
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-3 col-md-6 col-12 my-2 fadcard">
+                        <div class="imgcontainer position-relative">
+                            <img src="./assets/cards/1.png">
+                            <span>10% OFF</span>
+                            <div class="iconscont">
+                                <a href="#"><i class="bi bi-heart-fill"></i></a>
+                                <a href="#"><i class="bi bi-eye-fill"></i></a>
+                            </div>
+                            <div class="hiddenbtn">
+                                <a href="#">
+                                    <i class="bi bi-basket2"></i>
+                                    ADD TO CART
+                                </a>
+                            </div>
+                        </div>
+                        <div class="text my-2 px-1">
+                            <div class="d-flex justify-content-between ">
+                                <div class="t1">
+                                    <span class="ccrimson"><i class="bi bi-star-fill"></i></span>
+                                    <span class="ccrimson"><i class="bi bi-star-fill"></i></span>
+                                    <span class="ccrimson"><i class="bi bi-star-fill"></i></span>
+                                    <span class="ccrimson"><i class="bi bi-star-fill"></i></span>
+                                    <span class="cgrey"><i class="bi bi-star-fill"></i></span>
+                                    <a href="#">(50)</a>
+                                </div>
+                                <stroke class=" text-decoration-line-through cgrey">$67.00</stroke>
+                            </div>
+                        
+                            <div class="d-flex justify-content-between  t2 my-1 px-0">
+                                <a href="#">Cozy knit sweater with jacket</a>
+                                <h6>$23.00</h6>
+                            </div>
+                            
+                        </div>
+                        <div>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-12 my-2 fadcard">
+                        <div class="imgcontainer position-relative">
+                            <img src="./assets/cards/2.png">
+                            <span>10% OFF</span>
+                            <div class="iconscont">
+                                <a href="#"><i class="bi bi-heart-fill"></i></a>
+                                <a href="#"><i class="bi bi-eye-fill"></i></a>
+                            </div>
+                            <div class="hiddenbtn">
+                                <a href="#">
+                                    <i class="bi bi-basket2"></i>
+                                    ADD TO CART
+                                </a>
+                            </div>
+                        </div>
+                        <div class="text my-2 px-1">
+                            <div class="d-flex justify-content-between ">
+                                <div class="t1">
+                                    <span class="ccrimson"><i class="bi bi-star-fill"></i></span>
+                                    <span class="ccrimson"><i class="bi bi-star-fill"></i></span>
+                                    <span class="ccrimson"><i class="bi bi-star-fill"></i></span>
+                                    <span class="ccrimson"><i class="bi bi-star-fill"></i></span>
+                                    <span class="cgrey"><i class="bi bi-star-fill"></i></span>
+                                    <a href="#">(50)</a>
+                                </div>
+                                <stroke class=" text-decoration-line-through cgrey">$67.00</stroke>
+                            </div>
+                        
+                            <div class="d-flex justify-content-between  t2 my-1 px-0">
+                                <a href="#">Cozy knit sweater with jacket</a>
+                                <h6>$23.00</h6>
+                            </div>
+                            
+                        </div>
+                        <div>
+
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-12 my-2 fadcard">
+                        <div class="imgcontainer position-relative">
+                            <img src="./assets/cards/3.png">
+                            <span>10% OFF</span>
+                            <div class="iconscont">
+                                <a href="#"><i class="bi bi-heart-fill"></i></a>
+                                <a href="#"><i class="bi bi-eye-fill"></i></a>
+                            </div>
+                            <div class="hiddenbtn">
+                                <a href="#">
+                                    <i class="bi bi-basket2"></i>
+                                    ADD TO CART
+                                </a>
+                            </div>
+                        </div>
+                        <div class="text my-2 px-1">
+                            <div class="d-flex justify-content-between ">
+                                <div class="t1">
+                                    <span class="ccrimson"><i class="bi bi-star-fill"></i></span>
+                                    <span class="ccrimson"><i class="bi bi-star-fill"></i></span>
+                                    <span class="ccrimson"><i class="bi bi-star-fill"></i></span>
+                                    <span class="ccrimson"><i class="bi bi-star-fill"></i></span>
+                                    <span class="cgrey"><i class="bi bi-star-fill"></i></span>
+                                    <a href="#">(50)</a>
+                                </div>
+                                <stroke class=" text-decoration-line-through cgrey">$67.00</stroke>
+                            </div>
+                        
+                            <div class="d-flex justify-content-between  t2 my-1 px-0">
+                                <a href="#">Cozy knit sweater with jacket</a>
+                                <h6>$23.00</h6>
+                            </div>
+                            
+                        </div>
+                        <div>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-12 my-2 fadcard">
+                        <div class="imgcontainer position-relative">
+                            <img src="./assets/cards/4.png">
+                            <span>10% OFF</span>
+                            <div class="iconscont">
+                                <a href="#"><i class="bi bi-heart-fill"></i></a>
+                                <a href="#"><i class="bi bi-eye-fill"></i></a>
+                            </div>
+                            <div class="hiddenbtn">
+                                <a href="#">
+                                    <i class="bi bi-basket2"></i>
+                                    ADD TO CART
+                                </a>
+                            </div>
+                        </div>
+                        <div class="text my-2 px-1">
+                            <div class="d-flex justify-content-between ">
+                                <div class="t1">
+                                    <span class="ccrimson"><i class="bi bi-star-fill"></i></span>
+                                    <span class="ccrimson"><i class="bi bi-star-fill"></i></span>
+                                    <span class="ccrimson"><i class="bi bi-star-fill"></i></span>
+                                    <span class="ccrimson"><i class="bi bi-star-fill"></i></span>
+                                    <span class="cgrey"><i class="bi bi-star-fill"></i></span>
+                                    <a href="#">(50)</a>
+                                </div>
+                                <stroke class=" text-decoration-line-through cgrey">$67.00</stroke>
+                            </div>
+                        
+                            <div class="d-flex justify-content-between  t2 my-1 px-0">
+                                <a href="#">Cozy knit sweater with jacket</a>
+                                <h6>$23.00</h6>
+                            </div>
+                            
+                        </div>
+                        <div>
+
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-3 col-md-6 col-12 my-2 fadcard">
+                        <div class="imgcontainer position-relative">
+                            <img src="./assets/cards/1.png">
+                            <span>10% OFF</span>
+                            <div class="iconscont">
+                                <a href="#"><i class="bi bi-heart-fill"></i></a>
+                                <a href="#"><i class="bi bi-eye-fill"></i></a>
+                            </div>
+                            <div class="hiddenbtn">
+                                <a href="#">
+                                    <i class="bi bi-basket2"></i>
+                                    ADD TO CART
+                                </a>
+                            </div>
+                        </div>
+                        <div class="text my-2 px-1">
+                            <div class="d-flex justify-content-between ">
+                                <div class="t1">
+                                    <span class="ccrimson"><i class="bi bi-star-fill"></i></span>
+                                    <span class="ccrimson"><i class="bi bi-star-fill"></i></span>
+                                    <span class="ccrimson"><i class="bi bi-star-fill"></i></span>
+                                    <span class="ccrimson"><i class="bi bi-star-fill"></i></span>
+                                    <span class="cgrey"><i class="bi bi-star-fill"></i></span>
+                                    <a href="#">(50)</a>
+                                </div>
+                                <stroke class=" text-decoration-line-through cgrey">$67.00</stroke>
+                            </div>
+                        
+                            <div class="d-flex justify-content-between  t2 my-1 px-0">
+                                <a href="#">Cozy knit sweater with jacket</a>
+                                <h6>$23.00</h6>
+                            </div>
+                            
+                        </div>
+                        <div>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-12 my-2 fadcard">
+                        <div class="imgcontainer position-relative">
+                            <img src="./assets/cards/2.png">
+                            <span>10% OFF</span>
+                            <div class="iconscont">
+                                <a href="#"><i class="bi bi-heart-fill"></i></a>
+                                <a href="#"><i class="bi bi-eye-fill"></i></a>
+                            </div>
+                            <div class="hiddenbtn">
+                                <a href="#">
+                                    <i class="bi bi-basket2"></i>
+                                    ADD TO CART
+                                </a>
+                            </div>
+                        </div>
+                        <div class="text my-2 px-1">
+                            <div class="d-flex justify-content-between ">
+                                <div class="t1">
+                                    <span class="ccrimson"><i class="bi bi-star-fill"></i></span>
+                                    <span class="ccrimson"><i class="bi bi-star-fill"></i></span>
+                                    <span class="ccrimson"><i class="bi bi-star-fill"></i></span>
+                                    <span class="ccrimson"><i class="bi bi-star-fill"></i></span>
+                                    <span class="cgrey"><i class="bi bi-star-fill"></i></span>
+                                    <a href="#">(50)</a>
+                                </div>
+                                <stroke class=" text-decoration-line-through cgrey">$67.00</stroke>
+                            </div>
+                        
+                            <div class="d-flex justify-content-between  t2 my-1 px-0">
+                                <a href="#">Cozy knit sweater with jacket</a>
+                                <h6>$23.00</h6>
+                            </div>
+                            
+                        </div>
+                        <div>
+
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-12 my-2 fadcard">
+                        <div class="imgcontainer position-relative">
+                            <img src="./assets/cards/3.png">
+                            <span>10% OFF</span>
+                            <div class="iconscont">
+                                <a href="#"><i class="bi bi-heart-fill"></i></a>
+                                <a href="#"><i class="bi bi-eye-fill"></i></a>
+                            </div>
+                            <div class="hiddenbtn">
+                                <a href="#">
+                                    <i class="bi bi-basket2"></i>
+                                    ADD TO CART
+                                </a>
+                            </div>
+                        </div>
+                        <div class="text my-2 px-1">
+                            <div class="d-flex justify-content-between ">
+                                <div class="t1">
+                                    <span class="ccrimson"><i class="bi bi-star-fill"></i></span>
+                                    <span class="ccrimson"><i class="bi bi-star-fill"></i></span>
+                                    <span class="ccrimson"><i class="bi bi-star-fill"></i></span>
+                                    <span class="ccrimson"><i class="bi bi-star-fill"></i></span>
+                                    <span class="cgrey"><i class="bi bi-star-fill"></i></span>
+                                    <a href="#">(50)</a>
+                                </div>
+                                <stroke class=" text-decoration-line-through cgrey">$67.00</stroke>
+                            </div>
+                        
+                            <div class="d-flex justify-content-between  t2 my-1 px-0">
+                                <a href="#">Cozy knit sweater with jacket</a>
+                                <h6>$23.00</h6>
+                            </div>
+                            
+                        </div>
+                        <div>
+
+                        </div>
+                    </div>
+                </div>
+                
+                
+            </div>
+     </div>
+    <!-- END OF FEATURED PRODUCTS -->
+
+    <!-- FEATURED Collection SLIDER -->
+     <div class="content">
+        <div class="container">
+            <div class="row align-items-center my-5">
+
+                <div class=" col-md-6 col-12  mb-md-4 mb-5 fadcard2">
+                    <small class="ccrimson fs-6">
+                        <span class="cdarkblue">
+                            ☆
+                        </span>
+                        Feature Products
+                </small>
+                        <h1 class=" text-nowrap">
+                            Our Features Collection
+
+                        </h1>
+                    </div>
+                    <div class="col-md-6 col-12 catbtns d-flex justify-content-md-end justify-content-start  gap-2 fadcard3 fadcard3">
+                        <div class="swiper-button-prev2"><i class="bi bi-arrow-left"></i></div>
+                      <div class="swiper-button-next2" ><i class="bi bi-arrow-right"></i></div>
+                  </div>
+            </div>
+        </div>
+        <div class="swiper mySwiper2 container px-2" >
+            
+            <div class="swiper-wrapper fadcard">
+              <div class="swiper-slide">
+
+                <div class="imgcontainer position-relative">
+                    <img src="./assets/cards/2.png">
+                    <span>10% OFF</span>
+                    <div class="iconscont">
+                        <a href="#"><i class="bi bi-heart-fill"></i></a>
+                        <a href="#"><i class="bi bi-eye-fill"></i></a>
+                    </div>
+                    <div class="hiddenbtn">
+                        <a href="#">
+                            <i class="bi bi-basket2"></i>
+                            ADD TO CART
+                        </a>
+                    </div>
+                </div>
+                <div class="text my-2 px-1">
+                    <div class="d-flex justify-content-between ">
+                        <div class="t1">
+                            <span class="ccrimson"><i class="bi bi-star-fill"></i></span>
+                            <span class="ccrimson"><i class="bi bi-star-fill"></i></span>
+                            <span class="ccrimson"><i class="bi bi-star-fill"></i></span>
+                            <span class="ccrimson"><i class="bi bi-star-fill"></i></span>
+                            <span class="cgrey"><i class="bi bi-star-fill"></i></span>
+                            <a href="#">(50)</a>
+                        </div>
+                        <stroke class=" text-decoration-line-through cgrey">$67.00</stroke>
+                    </div>
+                
+                    <div class="d-flex justify-content-between  t2 my-1 px-0">
+                        <a href="#">Cozy knit sweater with jacket</a>
+                        <h6>$23.00</h6>
+                    </div>
+                    
+                </div>
+                <div>
+
+                </div>
+              </div>
+
+              
+              <div class="swiper-slide">
+                <div class="imgcontainer position-relative">
+                    <img src="./assets/cards/3.png">
+                    <span>10% OFF</span>
+                    <div class="iconscont">
+                        <a href="#"><i class="bi bi-heart-fill"></i></a>
+                        <a href="#"><i class="bi bi-eye-fill"></i></a>
+                    </div>
+                    <div class="hiddenbtn">
+                        <a href="#">
+                            <i class="bi bi-basket2"></i>
+                            ADD TO CART
+                        </a>
+                    </div>
+                </div>
+                <div class="text my-2 px-1">
+                    <div class="d-flex justify-content-between ">
+                        <div class="t1">
+                            <span class="ccrimson"><i class="bi bi-star-fill"></i></span>
+                            <span class="ccrimson"><i class="bi bi-star-fill"></i></span>
+                            <span class="ccrimson"><i class="bi bi-star-fill"></i></span>
+                            <span class="ccrimson"><i class="bi bi-star-fill"></i></span>
+                            <span class="cgrey"><i class="bi bi-star-fill"></i></span>
+                            <a href="#">(50)</a>
+                        </div>
+                        <stroke class=" text-decoration-line-through cgrey">$67.00</stroke>
+                    </div>
+                
+                    <div class="d-flex justify-content-between  t2 my-1 px-0">
+                        <a href="#">Cozy knit sweater with jacket</a>
+                        <h6>$23.00</h6>
+                    </div>
+                    
+                </div>
+                <div>
+
+                </div>
+                
+              </div>
+
+              
+              <div class="swiper-slide">
+
+                <div class="imgcontainer position-relative">
+                    <img src="./assets/cards/4.png">
+                    <span>10% OFF</span>
+                    <div class="iconscont">
+                        <a href="#"><i class="bi bi-heart-fill"></i></a>
+                        <a href="#"><i class="bi bi-eye-fill"></i></a>
+                    </div>
+                    <div class="hiddenbtn">
+                        <a href="#">
+                            <i class="bi bi-basket2"></i>
+                            ADD TO CART
+                        </a>
+                    </div>
+                </div>
+                <div class="text my-2 px-1">
+                    <div class="d-flex justify-content-between ">
+                        <div class="t1">
+                            <span class="ccrimson"><i class="bi bi-star-fill"></i></span>
+                            <span class="ccrimson"><i class="bi bi-star-fill"></i></span>
+                            <span class="ccrimson"><i class="bi bi-star-fill"></i></span>
+                            <span class="ccrimson"><i class="bi bi-star-fill"></i></span>
+                            <span class="cgrey"><i class="bi bi-star-fill"></i></span>
+                            <a href="#">(50)</a>
+                        </div>
+                        <stroke class=" text-decoration-line-through cgrey">$67.00</stroke>
+                    </div>
+                
+                    <div class="d-flex justify-content-between  t2 my-1 px-0">
+                        <a href="#">Cozy knit sweater with jacket</a>
+                        <h6>$23.00</h6>
+                    </div>
+                    
+                </div>
+                <div>
+
+                </div>
+              </div>
+
+              
+              <div class="swiper-slide">
+
+                <div class="imgcontainer position-relative">
+                    <img src="./assets/cards/1.png">
+                    <span>10% OFF</span>
+                    <div class="iconscont">
+                        <a href="#"><i class="bi bi-heart-fill"></i></a>
+                        <a href="#"><i class="bi bi-eye-fill"></i></a>
+                    </div>
+                    <div class="hiddenbtn">
+                        <a href="#">
+                            <i class="bi bi-basket2"></i>
+                            ADD TO CART
+                        </a>
+                    </div>
+                </div>
+                <div class="text my-2 px-1">
+                    <div class="d-flex justify-content-between ">
+                        <div class="t1">
+                            <span class="ccrimson"><i class="bi bi-star-fill"></i></span>
+                            <span class="ccrimson"><i class="bi bi-star-fill"></i></span>
+                            <span class="ccrimson"><i class="bi bi-star-fill"></i></span>
+                            <span class="ccrimson"><i class="bi bi-star-fill"></i></span>
+                            <span class="cgrey"><i class="bi bi-star-fill"></i></span>
+                            <a href="#">(50)</a>
+                        </div>
+                        <stroke class=" text-decoration-line-through cgrey">$67.00</stroke>
+                    </div>
+                
+                    <div class="d-flex justify-content-between  t2 my-1 px-0">
+                        <a href="#">Cozy knit sweater with jacket</a>
+                        <h6>$23.00</h6>
+                    </div>
+                    
+                </div>
+                <div>
+
+                </div>
+              </div>
+
+              
+              <div class="swiper-slide">
+
+                <div class="imgcontainer position-relative">
+                    <img src="./assets/cards/3.png">
+                    <span>10% OFF</span>
+                    <div class="iconscont">
+                        <a href="#"><i class="bi bi-heart-fill"></i></a>
+                        <a href="#"><i class="bi bi-eye-fill"></i></a>
+                    </div>
+                    <div class="hiddenbtn">
+                        <a href="#">
+                            <i class="bi bi-basket2"></i>
+                            ADD TO CART
+                        </a>
+                    </div>
+                </div>
+                <div class="text my-2 px-1">
+                    <div class="d-flex justify-content-between ">
+                        <div class="t1">
+                            <span class="ccrimson"><i class="bi bi-star-fill"></i></span>
+                            <span class="ccrimson"><i class="bi bi-star-fill"></i></span>
+                            <span class="ccrimson"><i class="bi bi-star-fill"></i></span>
+                            <span class="ccrimson"><i class="bi bi-star-fill"></i></span>
+                            <span class="cgrey"><i class="bi bi-star-fill"></i></span>
+                            <a href="#">(50)</a>
+                        </div>
+                        <stroke class=" text-decoration-line-through cgrey">$67.00</stroke>
+                    </div>
+                
+                    <div class="d-flex justify-content-between  t2 my-1 px-0">
+                        <a href="#">Cozy knit sweater with jacket</a>
+                        <h6>$23.00</h6>
+                    </div>
+                    
+                </div>
+                <div>
+
+                </div>
+              </div>
+
+             
+            </div>
+            
+          </div>
+          
+     </div>
+    <!-- END OF FEATURED Collection SLIDER -->
+
+
+    <!-- Work Processing -->
+     <div class="container my-5">
+<div class="workprocess">
+
+    <div class="row flex-column align-items-center justify-content-center ">
+        <div class="col-12 text-center fadcard">
+            <h6 class="ccrimson"><span class="cdarkblue mx-2">☆</span> Work Processing
+                <span class="cdarkblue mx-2">☆</span></h6>
+                <h2>The Process Of How Does It Work.
+                </h2>
+                <div class="row my-4 text-start">
+                    <div class="col-12 col-md-6 col-xl-3 my-2 fadcard   ">
+                        
+                        <div class="processcard px-3 py-2">
+
+                            <span>01</span>
+                            <h1 class="mb-4">
+                                
+                                <i class="bi bi-layout-text-window"></i>
+                            </h1>
+                            <h5>Browsing & Choosing
+                            </h5>
+                            <p>
+                                This is where customers visit your online store, browse your products.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-xl-3 my-2 fadcard  ">
+                        
+                        <div class="processcard px-3 py-2">
+
+                            <span>02</span>
+                            <h1 class="mb-4">
+                                
+                                <i class="bi bi-cash-coin"></i>                            </h1>
+                            <h5>
+                                Checkout & Payment
+                            </h5>
+                            <p>
+                                Once they have picked their items, customers proceed to checkout.
+
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-xl-3 my-2 fadcard ">
+                        
+                        <div class="processcard px-3 py-2">
+
+                            <span>03</span>
+                            <h1 class="mb-4">
+                                
+                                <i class="bi bi-coin"></i>
+                            </h1>
+                            <h5>
+                                Order Fulfillment
+                            </h5>
+                            <p>
+                                After the order is placed, it's sent to your fulfillment team.
+
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-xl-3 my-2 fadcard ">
+                        
+                        <div class="processcard px-3 py-2">
+
+                            <span>04</span>
+                            <h1 class="mb-4">
+                                
+                                <i class="bi bi-truck"></i>
+                            </h1>
+                            <h5>
+                                Delivery to Customer
+                            </h5>
+                            <p>
+                                The packed order is then sent off with a shipping carrier
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+</div>
+     </div>
+
+    <!--End Of Work Processing -->
+
+    <!-- Trending Products -->
+     <div class="container-fluid trendingproducts">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-12 fadcard2">
+                    <h6 class="ccrimson">
+                        <span class="cdarkblue me-2">☆</span>
+                        Trending Products
+                    </h6>
+                    <h2>What's Trending Now
+                    </h2>
+                </div>
+                <div class="col-md-6 col-12 catbtns d-flex justify-content-md-end justify-content-start  gap-2 fadcard3">
+                    <div class="swiper-button-prev3 "><i class="bi bi-arrow-left"></i></div>
+                  <div class="swiper-button-next3 " ><i class="bi bi-arrow-right"></i></div>
+              </div>
+            </div>
+        </div>
+
+        
+
+        <div class="swiper mySwiper3 px-4 my-5" >
+            
+            <div class="swiper-wrapper fadcard">
+              <div class="swiper-slide">
+                <div class="tcards">
+                    <div class="imgcontainer">
+                        <img src="./assets/trending/1.png">
+                    </div>
+                        <div class="text my-2 px-3">
+                            <div class="d-flex justify-content-between ">
+                                <div class="t1">
+                                    <span class="ccrimson"><i class="bi bi-star-fill"></i></span>
+                                    <span class="ccrimson"><i class="bi bi-star-fill"></i></span>
+                                    <span class="ccrimson"><i class="bi bi-star-fill"></i></span>
+                                    <span class="ccrimson"><i class="bi bi-star-fill"></i></span>
+                                    <span class="cgrey"><i class="bi bi-star-fill"></i></span>
+                                    <a href="#">(50)</a>
+                                </div>
+                                <stroke class=" text-decoration-line-through cgrey">$67.00</stroke>
+                            </div>
+                        
+                            <div class="d-flex justify-content-between  t2 my-1 px-0">
+                                <a href="#">Cozy knit sweater with jacket</a>
+                                <h6>$23.00</h6>
+                            </div>
+                            
+                    </div>
+                </div>
+              </div>
+              
+              <div class="swiper-slide">
+                <div class="tcards">
+                    <div class="imgcontainer">
+                        <img src="./assets/trending/2.png">
+                    </div>
+                        <div class="text my-2 px-3">
+                            <div class="d-flex justify-content-between ">
+                                <div class="t1">
+                                    <span class="ccrimson"><i class="bi bi-star-fill"></i></span>
+                                    <span class="ccrimson"><i class="bi bi-star-fill"></i></span>
+                                    <span class="ccrimson"><i class="bi bi-star-fill"></i></span>
+                                    <span class="ccrimson"><i class="bi bi-star-fill"></i></span>
+                                    <span class="cgrey"><i class="bi bi-star-fill"></i></span>
+                                    <a href="#">(50)</a>
+                                </div>
+                                <stroke class=" text-decoration-line-through cgrey">$67.00</stroke>
+                            </div>
+                        
+                            <div class="d-flex justify-content-between  t2 my-1 px-0">
+                                <a href="#">Cozy knit sweater with jacket</a>
+                                <h6>$23.00</h6>
+                            </div>
+                            
+                    </div>
+                </div>
+              </div>
+              
+              <div class="swiper-slide">
+                <div class="tcards">
+                    <div class="imgcontainer">
+                        <img src="./assets/trending/3.png">
+                    </div>
+                        <div class="text my-2 px-3">
+                            <div class="d-flex justify-content-between ">
+                                <div class="t1">
+                                    <span class="ccrimson"><i class="bi bi-star-fill"></i></span>
+                                    <span class="ccrimson"><i class="bi bi-star-fill"></i></span>
+                                    <span class="ccrimson"><i class="bi bi-star-fill"></i></span>
+                                    <span class="ccrimson"><i class="bi bi-star-fill"></i></span>
+                                    <span class="cgrey"><i class="bi bi-star-fill"></i></span>
+                                    <a href="#">(50)</a>
+                                </div>
+                                <stroke class=" text-decoration-line-through cgrey">$67.00</stroke>
+                            </div>
+                        
+                            <div class="d-flex justify-content-between  t2 my-1 px-0">
+                                <a href="#">Cozy knit sweater with jacket</a>
+                                <h6>$23.00</h6>
+                            </div>
+                            
+                    </div>
+                </div>
+              </div>
+              
+              <div class="swiper-slide">
+                <div class="tcards">
+                    <div class="imgcontainer">
+                        <img src="./assets/trending/4.png">
+                    </div>
+                        <div class="text my-2 px-3">
+                            <div class="d-flex justify-content-between ">
+                                <div class="t1">
+                                    <span class="ccrimson"><i class="bi bi-star-fill"></i></span>
+                                    <span class="ccrimson"><i class="bi bi-star-fill"></i></span>
+                                    <span class="ccrimson"><i class="bi bi-star-fill"></i></span>
+                                    <span class="ccrimson"><i class="bi bi-star-fill"></i></span>
+                                    <span class="cgrey"><i class="bi bi-star-fill"></i></span>
+                                    <a href="#">(50)</a>
+                                </div>
+                                <stroke class=" text-decoration-line-through cgrey">$67.00</stroke>
+                            </div>
+                        
+                            <div class="d-flex justify-content-between  t2 my-1 px-0">
+                                <a href="#">Cozy knit sweater with jacket</a>
+                                <h6>$23.00</h6>
+                            </div>
+                            
+                    </div>
+                </div>
+              </div>
+              
+              <div class="swiper-slide">
+                <div class="tcards">
+                    <div class="imgcontainer">
+                        <img src="./assets/trending/5.png">
+                    </div>
+                        <div class="text my-2 px-3">
+                            <div class="d-flex justify-content-between ">
+                                <div class="t1">
+                                    <span class="ccrimson"><i class="bi bi-star-fill"></i></span>
+                                    <span class="ccrimson"><i class="bi bi-star-fill"></i></span>
+                                    <span class="ccrimson"><i class="bi bi-star-fill"></i></span>
+                                    <span class="ccrimson"><i class="bi bi-star-fill"></i></span>
+                                    <span class="cgrey"><i class="bi bi-star-fill"></i></span>
+                                    <a href="#">(50)</a>
+                                </div>
+                                <stroke class=" text-decoration-line-through cgrey">$67.00</stroke>
+                            </div>
+                        
+                            <div class="d-flex justify-content-between  t2 my-1 px-0">
+                                <a href="#">Cozy knit sweater with jacket</a>
+                                <h6>$23.00</h6>
+                            </div>
+                            
+                    </div>
+                </div>
+              </div>
+              
+              <div class="swiper-slide">
+                <div class="tcards">
+                    <div class="imgcontainer">
+                        <img src="./assets/trending/3.png">
+                    </div>
+                        <div class="text my-2 px-3">
+                            <div class="d-flex justify-content-between ">
+                                <div class="t1">
+                                    <span class="ccrimson"><i class="bi bi-star-fill"></i></span>
+                                    <span class="ccrimson"><i class="bi bi-star-fill"></i></span>
+                                    <span class="ccrimson"><i class="bi bi-star-fill"></i></span>
+                                    <span class="ccrimson"><i class="bi bi-star-fill"></i></span>
+                                    <span class="cgrey"><i class="bi bi-star-fill"></i></span>
+                                    <a href="#">(50)</a>
+                                </div>
+                                <stroke class=" text-decoration-line-through cgrey">$67.00</stroke>
+                            </div>
+                        
+                            <div class="d-flex justify-content-between  t2 my-1 px-0">
+                                <a href="#">Cozy knit sweater with jacket</a>
+                                <h6>$23.00</h6>
+                            </div>
+                            
+                    </div>
+                </div>
+              </div>
+              
+            </div>
+        </div>
+
+
+
+
+     </div>
+
+    <!--End of Trending Products -->
+     <!-- DEAL OF THE WEEK -->
+      <div class="container my-5">
+        <div class="dealoftheweek fadcard">
+            <div class="row ">
+                <div class="col-xxl-5 col-xl-6 col-12 p-4">
+                    <div class="text d-flex flex-column align-items-xl-start ps-xl-5 align-items-center py-3">
+                        
+                        <p class="fs-4">
+                            <span class="cdarkblue me-2">
+                                <i class="bi bi-tag-fill"></i>
+                            </span>Deal of the Week
+                        </p>
+                        <h1>Hurry Up! Offer ends in.
+                        </h1>
+                        <div class="timer d-flex gap-3 my-4">
+                            <div >
+                                <h2 id="days"></h2>
+                                <p>Days</p>
+                            </div>
+                            <div >
+                                    <h2 id="hrs"></h2>
+                                    <p>Hours</p>
+                            </div>
+                            <div >
+                                    <h2 id="min"></h2>
+                                    <p>Minutes</p>
+                            </div>
+                            <div >
+                                <h2 id="sec"></h2>
+                                <p>Sec</p>
+                            </div>
+                        </div>
+                        <h1 class="ccrimson ms-3 mb-4">
+                            Get UP TO 80% OFF
+                        </h1>
+                        <a href="#">
+                            Shop Now
+                        </a>
+                    </div>
+                </div>
+                <div class="col-xxl-7 col-xl-6 d-xl-flex align-items-end pt-2 d-none">
+                    <img src="./assets/timer/deal-1.png" class="w-100">
+                </div>
+            </div>
+        </div>
+      </div>
+     <!--END OF DEAL OF THE WEEK -->
+
+      <!-- WHAT OUR CLIENTS SAY -->
+       <div class="container-fluid clientsay py-5">
+
+           <div class="container   ">
+               <div class="row">
+            <div class="col-lg-4  col-10 my-3 d-flex flex-column gap-3 fadcard2">
+                <h1>What Our Clients Say About Us</h1>
+                <div class=" d-flex gap-2">
+                    <div class="swiper-button-prev4"><i class="bi bi-arrow-left"></i></div>
+                    <div class="swiper-button-next4" ><i class="bi bi-arrow-right"></i></div>
+                </div>
+            </div>
+            <div class="col-lg-8 col-12 my-3">
+
+                <div class="swiper mySwiper4 px-2" >
+            
+                    <div class="swiper-wrapper fadcard3">
+                      <div class="swiper-slide">
+                          <div class="clientscard">
+                            <p>
+                                This inflatable dragon costume seemed perfect for Halloween! But upon inflating, it became clear the wings were uneven, 
+                                causing me to spin uncontrollably like a rogue pool float. 
+                            </p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="d-flex gap-2 align-items-center">
+                                    <div class="imgcontainer">
+                                        <img src="./assets/clientsopinion/1.png">   
+                                    </div>
+                                    <div>
+                                        <h5>Rhodes John</h5>
+                                        <div>
+                                            <span class="ccrimson"><i class="bi bi-star-fill"></i></span>
+                                            <span class="ccrimson"><i class="bi bi-star-fill"></i></span>
+                                            <span class="ccrimson"><i class="bi bi-star-fill"></i></span>
+                                            <span class="ccrimson"><i class="bi bi-star-fill"></i></span>
+                                            <span class="ccrimson"><i class="bi bi-star-fill"></i></span>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                                <span class="fs-1 cyellow"><i class="bi bi-chat-quote"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                      <div class="swiper-slide">
+                        <div class="clientscard">
+                            <p>
+                                This inflatable dragon costume seemed perfect for Halloween! But upon inflating, it became clear the wings were uneven, 
+                                causing me to spin uncontrollably like a rogue pool float. 
+                            </p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="d-flex gap-2 align-items-center">
+                                    <div class="imgcontainer">
+                                        <img src="./assets/clientsopinion/2.png">   
+                                    </div>
+                                    <div>
+                                        <h5>Rhodes John</h5>
+                                        <div>
+                                            <span class="ccrimson"><i class="bi bi-star-fill"></i></span>
+                                            <span class="ccrimson"><i class="bi bi-star-fill"></i></span>
+                                            <span class="ccrimson"><i class="bi bi-star-fill"></i></span>
+                                            <span class="ccrimson"><i class="bi bi-star-fill"></i></span>
+                                            <span class="ccrimson"><i class="bi bi-star-fill"></i></span>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                                <span class="fs-1 cyellow"><i class="bi bi-chat-quote"></i></span>
+                            </div>
+                        </div>
+                        </div>
+                      <div class="swiper-slide">
+                        <div class="clientscard">
+                            <p>
+                                This inflatable dragon costume seemed perfect for Halloween! But upon inflating, it became clear the wings were uneven, 
+                                causing me to spin uncontrollably like a rogue pool float. 
+                            </p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="d-flex gap-2 align-items-center">
+                                    <div class="imgcontainer">
+                                        <img src="./assets/clientsopinion/1.png">   
+                                    </div>
+                                    <div>
+                                        <h5>Rhodes John</h5>
+                                        <div>
+                                            <span class="ccrimson"><i class="bi bi-star-fill"></i></span>
+                                            <span class="ccrimson"><i class="bi bi-star-fill"></i></span>
+                                            <span class="ccrimson"><i class="bi bi-star-fill"></i></span>
+                                            <span class="ccrimson"><i class="bi bi-star-fill"></i></span>
+                                            <span class="ccrimson"><i class="bi bi-star-fill"></i></span>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                                <span class="fs-1 cyellow"><i class="bi bi-chat-quote"></i></span>
+                            </div>
+                        </div>
+                        </div>
+                      <div class="swiper-slide">
+                        <div class="clientscard">
+                            <p>
+                                This inflatable dragon costume seemed perfect for Halloween! But upon inflating, it became clear the wings were uneven, 
+                                causing me to spin uncontrollably like a rogue pool float. 
+                            </p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="d-flex gap-2 align-items-center">
+                                    <div class="imgcontainer">
+                                        <img src="./assets/clientsopinion/2.png">   
+                                    </div>
+                                    <div>
+                                        <h5>Rhodes John</h5>
+                                        <div>
+                                            <span class="ccrimson"><i class="bi bi-star-fill"></i></span>
+                                            <span class="ccrimson"><i class="bi bi-star-fill"></i></span>
+                                            <span class="ccrimson"><i class="bi bi-star-fill"></i></span>
+                                            <span class="ccrimson"><i class="bi bi-star-fill"></i></span>
+                                            <span class="ccrimson"><i class="bi bi-star-fill"></i></span>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                                <span class="fs-1 cyellow"><i class="bi bi-chat-quote"></i></span>
+                            </div>
+                        </div>
+                        </div>
+                      </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+    </div>
+      <!--END OF WHAT OUR CLIENTS SAY -->
+
+
+     <!-- OUR BLOGS -->
+      <div class="container my-5 ourblogs">
+          
+        <div class="d-flex justify-content-center align-items-center flex-column my-5 fadcard">
+            <h5 class="ccrimson">
+                <span class="cdarkblue">☆</span>
+                Our Blogs
+                <span class="cdarkblue">☆</span>
+            </h5>
+            <h1>
+                Explore our Articles
+            </h1>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-6 col-12 my-2 fadcard">
+                <div class="imgcontainer rounded-4 overflow-hidden">
+                    <img src="./assets/blogs/left.png" class="w-100">
+                </div>
+                <a href="#" class="fs-2 ">From Clicks to Closets:
+                     Mastering the Art of Fashion E-commerce Marketing</a>
+                <p>
+                    dives into the world of fashion e-commerce marketing, 
+                    guiding readers on how to turn online interest into sales.
+                    It likely explores strategies to attract potential customers, 
+                    showcase products effectively, and create a smooth buying journey 
+                    that converts clicks into clothes hanging in closets
+                </p>
+            </div>
+            <div class="col-lg-6 col-12 my-2 fadcard">
+                <div class="row m-0 p-0">
+                    <div class="col-sm-6 col-12 d-flex flex-column mb-3 gap-2 fadcard">
+                        <div class="imgcontainer rounded-4 overflow-hidden">
+                            <img src="./assets/blogs/1.png" class="w-100">
+                        </div>
+                        <a href="#">
+                            Slay the Summer Style Game Must-Have Trends You Can Shop Online
+                        </a>
+                        <div class="d-flex gap-2 bottomtext align-items-center">
+                            <a href="#">
+                                WordPress 
+                            </a>
+                            <span>☆</span>
+                            <a href="#"> 
+                                Feb 10, 2024</a>
+                        </div>
+                    </div>
+
+                    
+                    <div class="col-sm-6 col-12 d-flex flex-column mb-3 gap-2 fadcard">
+                        <div class="imgcontainer rounded-4 overflow-hidden">
+                            <img src="./assets/blogs/2.png" class="w-100">
+                        </div>
+                        <a href="#">
+                            Insider Tips on Finding Affordable Fashion Gems Online
+                        </a>
+                        <div class="d-flex gap-2 bottomtext align-items-center">
+                            <a href="#">
+                                WordPress 
+                            </a>
+                            <span>☆</span>
+                            <a href="#"> 
+                                Feb 10, 2024</a>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6 col-12 d-flex flex-column mb-3 gap-2 fadcard">
+                        <div class="imgcontainer rounded-4 overflow-hidden">
+                            <img src="./assets/blogs/3.png" class="w-100">
+                        </div>
+                        <a href="#">
+                            Eco-Friendly Fashion E-commerce You Can Feel Good About
+                        </a>
+                        <div class="d-flex gap-2 bottomtext align-items-center">
+                            <a href="#">
+                                WordPress 
+                            </a>
+                            <span>☆</span>
+                            <a href="#"> 
+                                Feb 10, 2024</a>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6 col-12 d-flex flex-column mb-3 gap-2 fadcard">
+                        <div class="imgcontainer rounded-4 overflow-hidden">
+                            <img src="./assets/blogs/4.png" class="w-100">
+                        </div>
+                        <a href="#">
+                            A Guide to Streamlining the Online Fashion Shopping Experience                        </a>
+                        <div class="d-flex gap-2 bottomtext align-items-center">
+                            <a href="#">
+                                WordPress 
+                            </a>
+                            <span>☆</span>
+                            <a href="#"> 
+                                Feb 10, 2024</a>
+                        </div>
+                    </div>
+
+                    
+                </div>
+            </div>
+        </div>
+      </div>
+     <!--END OF OUR BLOGS -->
+
+     <!-- NEW SETTLER -->
+      <div class="container newsettler my-5">
+        <div class="row bg-white fadcard">
+            <div class="col-lg-6 col-12 ">
+                <div class="m-5  d-flex flex-column gap-4">
+
+                    <p class="cdarkblue">
+                        Our Newsletter
+                    </p>
+                    <h2 class=" text-capitalize">
+                        Get weekly update. Sign up and get up to <small class="ccrimson text-decoration-underline">20% Off</small>  your first purchase
+                    </h2>
+                    <div class=" position-relative">
+                        <input type="text" placeholder="Write Your E-mail Address">
+                        <button>Subscribe</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 d-lg-flex d-none justify-content-end">
+                <img src="./assets/newsettler/1.png" class="w-75">
+            </div>
+        </div>
+      </div>
+     <!--END OF NEW SETTLER -->
+
+     <!-- FOOTER -->
+      <footer class="mt-5">
+        <div class="container my-5 fadcard">
+            <div class="row">
+                <div class="col-xl-3 col-md-6 col-12 d-flex flex-column gap-3 one">
+                    <div>
+                        <a href="./index.html"><img src="./assets/logo/logo.png"></a>
+                    </div>
+                    <div class="py-2">
+
+                        <p class="fs-6">
+                            Pesco is an exciting International brand we provide high quality clothes
+                        </p>
+                        <div>
+                        <span><i class="bi bi-envelope-fill me-2 fs-4"></i></span>
+                    <a href="#">
+                            info@mydomain.com</a>
+                    </div>
+                    <div class="bdb pb-5">
+                        <span><i class="bi bi-telephone-fill me-2 fs-4"></i></span>
+                        <a href="#" >
+                                info@mydomain.com
+                            </a>
+                    </div>
+                    <div class="d-flex gap-3 one1 py-3">
+                        <p class="cdarkblue fs-5">Find Us:</p>
+                        <a href="#">
+                            <i class="bi bi-facebook"></i>
+                        </a>
+                        <a href="#">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+                        <a href="#">
+                            <i class="bi bi-linkedin"></i>
+                        </a>
+                        <a href="#">
+                            <i class="bi bi-twitter"></i>
+                        </a>
+                    </div>
+                </div>
+                </div>
+
+                <div class="col-xl-3 col-md-6 col-12 two">
+                    <h3>Customer Services</h3>
+                    <div class="py-1">
+
+                        <ul class="m-0 p-0">
+                            <li>
+                            <span class="me-2">
+                                <img src="./assets/footer/star.svg">
+                            </span>
+                            <a href="#">Collections & Delivery</a>
+                        </li>
+                        <li>
+                            <span class="me-2">
+                                <img src="./assets/footer/star.svg">
+                            </span>
+                            <a href="#">
+                                Returns & Refunds
+                            </a>
+                        </li>
+                        <li>
+                            <span class="me-2">
+                                <img src="./assets/footer/star.svg">
+                            </span>
+                            <a href="#">
+                                Terms & Conditions
+                            </a>
+                        </li>
+                        <li>
+                            <span class="me-2">
+                                <img src="./assets/footer/star.svg">
+                            </span>
+                            <a href="#">
+                                Delivery Return
+                            </a>
+                        </li>
+                        <li>
+                            <span class="me-2">
+                                <img src="./assets/footer/star.svg">
+                            </span>
+                            <a href="#">
+                                Store Locations
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                </div>
+
+                <div class="col-xl-3 col-md-6 col-12 two ps-xl-5">
+                    <h3>Quick Link</h3>
+                    <div class="py-1">
+
+                        <ul class="m-0 p-0">
+                            <li>
+                            <span class="me-2">
+                                <img src="./assets/footer/star.svg">
+                            </span>
+                            <a href="#">Privacy Policy
+                            </a>
+                        </li>
+                        <li>
+                            <span class="me-2">
+                                <img src="./assets/footer/star.svg">
+                            </span>
+                            <a href="#">
+                                Terms Of Use
+                            </a>
+                        </li>
+                        <li>
+                            <span class="me-2">
+                                <img src="./assets/footer/star.svg">
+                            </span>
+                            <a href="#">
+                                FAQ
+                            </a>
+                        </li>
+                        <li>
+                            <span class="me-2">
+                                <img src="./assets/footer/star.svg">
+                            </span>
+                            <a href="#">
+                                Contact
+                            </a>
+                        </li>
+                        <li>
+                            <span class="me-2">
+                                <img src="./assets/footer/star.svg">
+                            </span>
+                            <a href="#">
+                                Login / Register
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                </div>
+
+                <div class="col-xl-3 col-md-6 col-12 three">
+                    <h3>Recent Posts</h3>
+                    <div class="py-4 d-flex flex-column gap-3">
+
+                        <div class="row ">
+                            <div class="col-4 ">
+                                <div class="imgcontainer"> 
+                                    <img src="./assets/trending/4.png" class="w-100">
+                                </div>
+                            </div>
+                            <div class="col-8">
+                                <a href="#">
+                                    <p>
+                                        Tips on Finding Affordable Fashion Gems Online
+                                    </p>
+                                    <small>
+                                        July 11, 2023
+                                    </small>
+                                </a>
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col-4 ">
+                            <div class="imgcontainer"> 
+                                <img src="./assets/trending/3.png" class="w-100">
+                            </div>
+                        </div>
+                        <div class="col-8">
+                            <a href="#">
+                                <p>
+                                    Mastering the Art of Fashion E-commerce Marketing
+                            </p>
+                                <small>
+                                    July 11, 2023
+                                </small>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-4 ">
+                            <div class="imgcontainer"> 
+                                <img src="./assets/trending/1.png" class="w-100">
+                            </div>
+                        </div>
+                        <div class="col-8">
+                            <a href="#">
+                                <p>
+                                    Must-Have Trends You Can Shop Online Now
+                                    </p>
+                                <small>
+                                    July 11, 2023
+                                </small>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="container">
+            <div class="row align-items-center pb-3">
+
+                <div class="col-lg-6 col-12 text-lg-start text-center py-3">
+                    <p class="fs-6">
+                        © 2024. All rights reserved by
+                        <span class="ccrimson fsans fw-medium">
+                            YMT 
+                        </span>
+                    </p>
+                    
+                </div>
+                <div class="col-lg-6 col-12 d-flex justify-content-lg-end justify-content-center ">
+                    <a href="#">
+                        <img src="./assets/footer/payment-method.png">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+        <a href="#" class="hiddenredbtn"><i class="bi bi-chevron-up"></i></a>
+    
+     <!--END OF FOOTER -->
+</body>
+</html>

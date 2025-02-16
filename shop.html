@@ -1,0 +1,1591 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pesco YMT Shops</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet"
+    href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <script src="./js/script.js"></script>
+    <script src="./js/script2.js" defer></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+</head>
+<body>
+     <!-- NAVIGATION BAR -->
+     <nav >
+        <div class="container-fluid  bg-white pt-3 d-lg-block d-none">
+
+        <div class="container ">
+            <div class="row ">
+                <div class="col-lg-2 p-0">
+                    <a href="./index.html">
+                        <img src="./assets/logo/logo.png">
+                    </a>
+                </div>
+                <div class="col-lg-7 ms-2">
+
+                    <div class="row mid">
+                        <div class="col-xl-4 col-lg-5 px-0 mx-0">
+                            <div class="selector" id="selectcat">
+
+                                <label >
+                                <small id="cattext">
+                                    All Categories
+                                </small>
+                                
+
+                                </label>
+                                <span class=" float-end pe-3">
+                                    <i class='bx bxs-chevron-down'></i>
+                                </span>
+
+                                <ul id="selectmenu" class="hidden">
+                                    <li class="active">
+                                        All Categories
+                                    </li>
+                                    <li>
+                                        Men Shirts
+                                    </li>
+                                    <li>
+                                        Denim Jeans    
+                                    </li>
+                                    <li>
+                                        Casual Suit
+                                    </li>
+                                    <li>
+                                        Summer Dress
+                                    </li>
+                                    <li>
+                                        Sweaters
+                                    </li>
+                                    <li>
+                                        Jackets
+                                    </li>
+                                </ul>
+                    
+                            </div>
+                        </div>
+                        
+                        <div class="col-xl-8 col-lg-7 position-relative">
+                            <input type="search" placeholder="Enter Search Products"  id="search">
+                            <button id="searchbtn"><i class="bi bi-search"></i></button>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="col">
+                    <div class="row right">
+                        <div class="col-10 text-end">
+                            <p>24/7 Support
+                            </p>
+                            <h4>+94 123 4567 894</h4>
+                        </div>
+                        <div class="col-2 text-end">
+                            <i class="bi bi-headset fs-1"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </nav>
+    <!-- END OF NAVIGATION BAR -->
+    <!-- HEADER  -->
+    <header>
+        <div class="container-fluid p-0">
+            <div class="container">
+                <div class="row">
+
+                    
+                    <div class="col-xl-3 col-lg-3 d-lg-block d-none px-0 ">
+                        <div id="pcat" class=" position-relative">
+                            <label>
+                                <i class="bi bi-list-ul pe-3"></i>
+                                Products Category
+                                <i class='bx bxs-chevron-down'></i>
+                            </label>
+                            <ul>
+
+                                <li>
+                                    <a href="#">
+                                        <img src="./assets/header/shirt.png">
+                                        Men Shirts
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="./assets/header/denim.png">
+                                        Denim Jeans
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="./assets/header/suit.png">
+                                        Casual Suits
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="./assets/header/dress.png">
+                                        Summer Dresses
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="./assets/header/sweaters.png">
+                                        Sweaters
+                                    </a>
+                                </li>
+                                <div id="showmoremenu"  >
+                                            <li>
+                                        <a href="#">
+                                            <img src="./assets/header/jacket.png">
+                                            Jackets
+                                        </a>
+                                    </li>
+                                    </div>
+                                    <button id="showbtn">
+                                    <div class="d-flex justify-content-center align-items-center">
+                                        <i class="bi bi-plus-circle"></i>
+                                            Show more...
+                                        </div>
+                                    </button>
+                                
+                            </ul>
+                        </div>
+                        
+                    </div>
+
+                    <div class="col-xl-5 col-lg-6 px-0 mid d-lg-flex d-none justify-content-between align-items-center ">
+                        <span>|</span>
+                        <ul class="d-flex justify-content-center gap-4 align-items-center m-0 px-0 h-100">
+                            <li>
+                                Home<i class='bx bx-chevron-down' ></i>
+                                <ul >
+                                    <li>
+                                        <a href="./index.html">Home 01</a>
+                                    </li>
+                                    
+                                    <li>
+                                        <a href="./index.html">Home 02</a>
+                                    </li>
+                                    
+                                </ul>
+                            </li>
+                            <li>
+                                Shop<i class='bx bx-chevron-down' ></i>
+                                <ul >
+                                    <li>
+                                        <a href="./shop.html">Our Shop</a>
+                                    </li>
+                                    
+                                    <li>
+                                        <a href="./product-details.html">Product Details</a>
+                                    </li>
+                                    <li>
+                                        <a href="./cart.html">Cart</a>
+                                    </li>
+                                    <li>
+                                        <a href="./checkout.html">Checkout</a>
+                                    </li>
+                                    <li>
+                                        <a href="./whishlist.html">Wishlist</a>
+                                    </li>
+                                    
+                                </ul>
+                            </li>
+                            <li>
+                                Blog<i class='bx bx-chevron-down' ></i>
+                                <ul >
+                                    <li>
+                                        <a href="#">Our Blog</a>
+                                    </li>
+                                    
+                                    <li>
+                                        <a href="#">Blog Details</a>
+                                    </li>
+                                    
+                                </ul>
+                            </li>
+                            <li>
+                                Pages<i class='bx bx-chevron-down' >
+                                </i>
+                                <ul >
+                                    <li>
+                                        <a href="#">About Us</a>
+                                    </li>
+                                    
+                                    <li>
+                                        <a href="#">Faqs</a>
+                                    </li>
+                                    
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">Contact</a>
+                            </li>
+                        </ul>
+                        <span>|</span>
+
+                    </div>
+                    <div class="col-xl-4 col-lg-3  right d-lg-flex d-none justify-content-end text-end gap-3 align-items-center">
+                        <small>
+                            <i class="bi bi-fire"></i> Deal</small>
+                        <span>
+                            <i class="bi bi-star-fill"></i>
+                        </span>
+                        
+                        <a href="./whishlist.html">
+                            <div class=" position-relative">
+                                <span class="fs-4"><i class="bi bi-heart"></i></span>
+                                <span>
+                                    01
+                                </span>
+                            </div>
+                        </a>
+                        <span><i class="bi bi-star-fill"></i></span>
+                        <button>
+                            <a href="./cart.html">
+                                <span>
+                                    01
+                                </span>
+                                <i class="bi bi-bag-fill"></i>
+                            </a>
+                        </button>
+                    </div>
+
+                    <!-- MOBILE MENU -->
+                    <div class="col-6 d-lg-none py-2">
+                        <a href="./index.html">
+                            <img src="./assets/logo/logo.png">
+                        </a>
+                    </div>
+                    <div class="col-6 d-lg-none d-flex  justify-content-end gap-3 py-2">
+                        <button id="cartbtn">
+                            <a href="./cart.html">
+                                <i class="bi bi-bag-fill"></i>
+                            </a>
+                        </button>
+                        <button  id="burgerbtn">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </button>
+                    </div>
+
+                     <!-- END OF MOBILE MENU -->
+                </div>
+            </div>
+        </div>
+       
+        <div class=" row " id="burgermenu">
+            <div class="col-7 col-sm-6  px-3 py-4 menu">
+               
+                    <div class=" position-relative" >
+                        <input type="search" placeholder=" Search Here" id="searchh">
+                        <button id="searchbtnh"><i class="bi bi-search"></i></button>
+                    </div>   
+               
+                    <div class="py-5 px-1">
+                        <input type="radio" name="menu" id="menur"  checked>
+                        <label for="menur" id="menurl" class=" me-2">Menu</label>
+                        <input type="radio" name="menu" id="catr">
+                        <label for="catr" id="catrl">Category</label>
+                        <div id="burgermenumenu">
+                            <ul class="d-flex justify-content-center flex-column  m-0 px-0 h-100">
+                                <li>
+                                    Home<i class='bx bx-chevron-down' ></i>
+                                </li>
+                                <ul >
+                                    <li>
+                                        <a href="./index.html">Home 01</a>
+                                    </li>
+                                    
+                                    <li>
+                                        <a href="./index.html">Home 02</a>
+                                    </li>
+                                    
+                                </ul>
+                                <li>
+                                    Shop<i class='bx bx-chevron-down' ></i>
+                                </li>
+                                <ul >
+                                    <li>
+                                        <a href="./shop.html">Our Shop</a>
+                                    </li>
+                                    
+                                    <li>
+                                        <a href="./product-details.html">Product Details</a>
+                                    </li>
+                                    <li>
+                                        <a href="./cart.html">Cart</a>
+                                    </li>
+                                    <li>
+                                        <a href="./checkout.html">Checkout</a>
+                                    </li>
+                                    <li>
+                                        <a href="./whishlist.html">Wishlist</a>
+                                    </li>
+                                    
+                                </ul>
+                                <li>
+                                    Blog<i class='bx bx-chevron-down' ></i>
+                                </li>
+                                <ul >
+                                    <li>
+                                        <a href="#">Our Blog</a>
+                                    </li>
+                                    
+                                    <li>
+                                        <a href="#">Blog Details</a>
+                                    </li>
+                                    
+                                </ul>
+                                <li>
+                                    Pages<i class='bx bx-chevron-down' >
+                                    </i>
+                                </li>
+                                <ul >
+                                    <li>
+                                        <a href="#">About Us</a>
+                                    </li>
+                                    
+                                    <li>
+                                        <a href="#">Faqs</a>
+                                    </li>
+                                    
+                                </ul>
+                                <li>
+                                    <a href="#">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div id="burgercat">
+                            <ul>
+
+                                <li>
+                                    <a href="#">
+                                        <img src="./assets/header/shirt.png">
+                                        Men Shirts
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="./assets/header/denim.png">
+                                        Denim Jeans
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="./assets/header/suit.png">
+                                        Casual Suits
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="./assets/header/dress.png">
+                                        Summer Dresses
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="./assets/header/sweaters.png">
+                                        Sweaters
+                                    </a>
+                                </li>
+                    
+                                        <li>
+                                        <a href="#">
+                                            <img src="./assets/header/jacket.png">
+                                            Jackets
+                                        </a>
+                                    </li>
+                                    
+                                
+                            </ul>
+                        </div>
+                            <div class="row burgerbot">
+                                <div class="col-2 ">
+                                    <i class="bi bi-headset fs-1"></i>
+                                </div>
+                                <div class="col-10 ">
+                                    <p>24/7 Support
+                                    </p>
+                                    <h6>+94 123 4567 894</h6>
+                                </div>
+                            </div>
+                    </div>
+            </div>
+            <div class="col" id="emptyspace">
+
+            </div>
+        </div>
+    </header>
+     
+    <!-- END OF HEADER -->
+   
+    <!-- SHOP PAGE -->
+     <div class="container-fluid shops position-relative">
+        <div class="container">
+            <div class="row">
+                <div class="col-6 left d-flex justify-content-between">
+                    <div class="row px-0 mx-0">
+                        <div class="col-10">
+                            
+                            <h1>Shop Page</h1>
+                            <a href="#">Home</a>
+                            <span class="mx-2"><i class="bi bi-arrow-right"></i></span>
+                        <small>Shop
+                        </small>
+                    </div>
+                    <div class="col-2 ">
+                        <img src="./assets/shop/curved-arrow.png">
+                    </div>
+                </div>
+            </div>
+                <div class="col-6 d-flex position-relative justify-content-end">
+                    <div class="  d-xl-block d-none">
+                        <img src="./assets/shop/1.png">
+                    </div>
+                    <div class="position-absolute end-0 top-0">
+                        <img src="./assets/shop/stars.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="sharp">
+            <img src="./assets/shop/sharp.png" class="w-100">
+        </div>
+     </div>
+    <!--END OF SHOP PAGE -->
+
+    <!-- shop products -->
+     <div class="container">
+        <div class="shopprods">
+
+            <div class="row">
+                <div class="col-xl-3 col-12 d-flex flex-column gap-4 py-5">
+                    <ul class=" bg-white p-4 d-flex flex-column gap-3 rounded-3 fadcard m-0">
+                        <h4 >
+                            Products Categories
+                        </h4>
+
+                        <li class="d-flex gap-3">
+                            <input type="checkbox" id="shopprod1">
+                            
+
+                                <label for="shopprod1" >
+                                    <p>
+                                        Women's Clothing
+                                    </p>
+                                    <span>
+                                        45
+                                    </span>
+                                </label>
+                        </li>
+
+                        <li class="d-flex gap-3">
+                            <input type="checkbox" id="shopprod2">
+                            
+
+                                <label for="shopprod2" >
+                                    <p>
+                                        Men's Clothing
+                                    </p>
+                                    <span>
+                                        40
+                                    </span>
+                                </label>
+                        </li>
+
+                        <li class="d-flex gap-3">
+                            <input type="checkbox" id="shopprod3">
+                            
+
+                                <label for="shopprod3" >
+                                    <p>
+                                        Formal Wear
+                                    </p>
+                                    <span>
+                                        35
+                                    </span>
+                                </label>
+                        </li>
+
+                        <li class="d-flex gap-3">
+                            <input type="checkbox" id="shopprod4">
+                            
+
+                                <label for="shopprod4" >
+                                    <p>
+                                        Foot Wear
+                                    </p>
+                                    <span>
+                                        59
+                                    </span>
+                                </label>
+                        </li>
+
+                        <li class="d-flex gap-3">
+                            <input type="checkbox" id="shopprod5">
+                            
+
+                                <label for="shopprod5" >
+                                    <p>
+                                        Accessories
+                                    </p>
+                                    <span>
+                                        74
+                                    </span>
+                                </label>
+                        </li>
+
+                        <li class="d-flex gap-3">
+                            <input type="checkbox" id="shopprod6">
+                            
+
+                                <label for="shopprod6" >
+                                    <p>
+                                        Maternity Wear
+                                    </p>
+                                    <span>
+                                        87
+                                    </span>
+                                </label>
+                        </li>
+
+                        <li class="d-flex gap-3">
+                            <input type="checkbox" id="shopprod7">
+                            
+
+                                <label for="shopprod7" >
+                                    <p>
+                                        Vintage Clothing
+                                    </p>
+                                    <span>
+                                        45
+                                    </span>
+                                </label>
+                        </li>
+
+                        <li class="d-flex gap-3">
+                            <input type="checkbox" id="shopprod8">
+                            
+
+                                <label for="shopprod8" >
+                                    <p>
+                                        Streetwear
+                                    </p>
+                                    <span>
+                                        88
+                                    </span>
+                                </label>
+                        </li>
+
+                        <li class="d-flex gap-3">
+                            <input type="checkbox" id="shopprod9">
+                            
+
+                                <label for="shopprod9" >
+                                    <p>
+                                        Swimwear
+                                    </p>
+                                    <span>
+                                        19
+                                    </span>
+                                </label>
+                        </li>
+                    </ul>
+
+
+                    <div class="bg-white p-4 d-flex flex-column gap-3 rounded-3 fadcard">
+                        <h4 >
+                            Price Filter
+                        </h4>
+                        
+                        <span id="range-values" class="fsans fs-6"></span>
+                        <div id="slider-range"></div>
+                 
+                    </div>
+
+
+                    <ul class=" bg-white p-4 d-flex flex-column gap-3 rounded-3 fadcard m-0">
+                        <h4 >
+                            Brands
+                        </h4>
+
+
+                        <li class="d-flex gap-3">
+                            <input type="checkbox" id="shopprodb1">
+                            
+
+                                <label for="shopprodb1" >
+                                    <p>
+                                        Nike
+                                    </p>
+                                    <span>
+                                        19
+                                    </span>
+                                </label>
+                        </li>
+
+                        <li class="d-flex gap-3">
+                            <input type="checkbox" id="shopprodb2">
+                            
+
+                                <label for="shopprodb2" >
+                                    <p>
+                                        Zara
+                                    </p>
+                                    <span>
+                                        55
+                                    </span>
+                                </label>
+                        </li>
+
+                        <li class="d-flex gap-3">
+                            <input type="checkbox" id="shopprodb3">
+                            
+
+                                <label for="shopprodb3" >
+                                    <p>
+                                        Denim
+                                    </p>
+                                    <span>
+                                        74
+                                    </span>
+                                </label>
+                        </li>
+
+                        <li class="d-flex gap-3">
+                            <input type="checkbox" id="shopprodb4">
+                            
+
+                                <label for="shopprodb4" >
+                                    <p>
+                                        Accessories
+                                    </p>
+                                    <span>
+                                        74
+                                    </span>
+                                </label>
+                        </li>
+
+                        <li class="d-flex gap-3">
+                            <input type="checkbox" id="shopprodb5">
+                            
+
+                                <label for="shopprodb5" >
+                                    <p>
+                                        Madame
+                                    </p>
+                                    <span>
+                                        12
+                                    </span>
+                                </label>
+                        </li>
+
+                        <li class="d-flex gap-3">
+                            <input type="checkbox" id="shopprodb6">
+                            
+
+                                <label for="shopprodb6" >
+                                    <p>
+                                        Max Mall
+                                    </p>
+                                    <span>
+                                        45
+                                    </span>
+                                </label>
+                        </li>
+
+                        <li class="d-flex gap-3">
+                            <input type="checkbox" id="shopprodb7">
+                            
+
+                                <label for="shopprodb7" >
+                                    <p>
+                                        BAGGIE
+                                    </p>
+                                    <span>
+                                        45
+                                    </span>
+                                </label>
+                        </li>
+
+                        <li class="d-flex gap-3">
+                            <input type="checkbox" id="shopprodb8">
+                            
+
+                                <label for="shopprodb8" >
+                                    <p>
+                                        Kolam
+                                    </p>
+                                    <span>
+                                        74
+                                    </span>
+                                </label>
+                        </li>
+
+                        <li class="d-flex gap-3">
+                            <input type="checkbox" id="shopprodb9">
+                            
+
+                                <label for="shopprodb9" >
+                                    <p>
+                                        Sketcen
+                                    </p>
+                                    <span>
+                                        19
+                                    </span>
+                                </label>
+                        </li>
+                    </ul>
+
+                    <div class="bg-white p-4 d-flex flex-column gap-3 rounded-3 fadcard">
+                    <h4>
+                        Color
+                    </h4>
+                    <div class="d-flex gap-3 prodcolors">
+                        <div >
+                            <input type="radio" name="colors" id="color1" >
+                            <label for="color1">
+                                <span class=" rounded-5 p-2 bg-black border border-black"></span>
+                            </label>
+                        </div>
+
+                        <div >
+                            <input type="radio" name="colors" id="color2" >
+                            <label for="color2">
+                                <span class=" rounded-5 p-2 bg-white border border-black"></span>
+                            </label>
+                        </div>
+
+                        <div >
+                            <input type="radio" name="colors" id="color3" >
+                            <label for="color3">
+                                <span class=" rounded-5 p-2 bgcrimson border border-black"></span>
+                            </label>
+                        </div>
+
+                        <div >
+                            <input type="radio" name="colors" id="color4" >
+                            <label for="color4">
+                                <span class=" rounded-5 p-2 bgorange border border-black"></span>
+                            </label>
+                        </div>
+
+                        <div >
+                            <input type="radio" name="colors" id="color5" >
+                            <label for="color5">
+                                <span class=" rounded-5 p-2 bgblue border border-black"></span>
+                            </label>
+                        </div>
+                        <div>
+                            <input type="radio" name="colors" id="color6" >
+                            <label for="color6">
+                                <span class=" rounded-5 p-2 bgyellow border border-black"></span>
+                            </label>
+                        </div>
+
+                    </div>
+                    </div>
+
+
+                    <div class="bg-white p-4 d-flex flex-column gap-3 rounded-3 fadcard">
+                    <h4>Size</h4>
+                    <div class="d-flex gap-2 flex-wrap">
+
+                        <div>
+                            <input type="radio" name="size" id="size1">
+                            <label for="size1">
+                                Slim Fit
+                            </label>
+                        </div>
+                        
+                        <div>
+                            <input type="radio" name="size" id="size2">
+                            <label for="size2">
+                                S
+                            </label>
+                        </div>
+
+                        <div>
+                            <input type="radio" name="size" id="size3">
+                            <label for="size3">
+                                M
+                            </label>
+                        </div>
+
+                        <div>
+                            <input type="radio" name="size" id="size4">
+                            <label for="size4">
+                                L
+                            </label>
+                        </div>
+
+                        <div>
+                            <input type="radio" name="size" id="size5">
+                            <label for="size5">
+                                XL
+                            </label>
+                        </div>
+
+                        <div>
+                            <input type="radio" name="size" id="size6">
+                            <label for="size6">
+                                2XL
+                            </label>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class=" position-relative bg-white pt-4 ps-4  rounded-3 fadcard leftad">
+                    <div class="position-absolute end-0 top-0">
+                        <img src="./assets/shop/leftnav/1.png">
+                    </div>
+                    <div class="d-flex justify-content-between">
+                        <div >
+                            <small class="bgyellow px-2 fs-6">
+                                BIG SALE
+                            </small>
+                            <h1>
+                                40%
+                            </h1>
+                            <p>off Each Product</p>
+                            <a href="./shop.html">
+                                Shop Now
+                            </a>
+                        </div>
+                        <div >
+                            <img src="./assets/shop/leftnav/girl.png">
+                        </div>
+                    </div>
+                </div>
+                </div>
+
+                <div class="col-xl-9 col-12 py-5 rightshops">
+                <div class="bg-white p-3 d-flex  justify-content-between rounded-3">
+                    <div class="d-flex gap-3 align-items-center">
+                        <span class="fsans cgrey fw-medium">
+                            Showing
+                        </span>
+                        <p class="m-0 p-0 cdarkblue">
+                            01-16 of 66
+                        </p>
+                        <p class="cdarkblue fw-medium m-0 p-0">
+                            Results
+                        </p>
+                    </div>
+                    
+                    <div>
+                        <div class="selector border-0 " id="selectcat2">
+                            <div class="d-flex gap-2">
+
+                                <label>
+                                    <small id="cattext2">
+                                        Default
+                                    </small>
+                                    
+                                    
+                                </label>
+                                <span>
+                                    <i class='bx bxs-chevron-down'></i>
+                                </span>
+                            </div>
+
+                            <ul id="selectmenu2" class="hidden">
+                                <li class="active">
+                                    Default
+                                </li>
+                                <li>
+                                    Newly Added
+                                </li>
+                                <li>
+                                    Popular    
+                                </li>
+                                <li>
+                                    Trending
+                                </li>
+                                <li>
+                                    Quantity
+                                </li>
+                                <li>
+                                    Oldest
+                                </li>
+                                
+                            </ul>
+                
+                        </div>
+                    </div>
+                    
+                    </div>
+
+
+                    <div class="row content my-5 fadding">
+                        <div class="col-lg-4 col-md-6 col-12 my-2 fadcard">
+                            <div class="imgcontainer position-relative">
+                                <img src="./assets/shop/Products/1.png">
+                                <span>10% OFF</span>
+                                <div class="iconscont">
+                                    <a href="#"><i class="bi bi-heart-fill"></i></a>
+                                    <a href="#"><i class="bi bi-eye-fill"></i></a>
+                                </div>
+                                <div class="hiddenbtn">
+                                    <a href="#">
+                                        <i class="bi bi-basket2"></i>
+                                        ADD TO CART
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="text my-2 px-1">
+                                <div class="d-flex justify-content-between ">
+                                    <div class="t1">
+                                        <span class="ccrimson"><i class="bi bi-star-fill"></i></span>
+                                        <span class="ccrimson"><i class="bi bi-star-fill"></i></span>
+                                        <span class="ccrimson"><i class="bi bi-star-fill"></i></span>
+                                        <span class="ccrimson"><i class="bi bi-star-fill"></i></span>
+                                        <span class="cgrey"><i class="bi bi-star-fill"></i></span>
+                                        <a href="#">(50)</a>
+                                    </div>
+                                    <stroke class=" text-decoration-line-through cgrey">$67.00</stroke>
+                                </div>
+                            
+                                <div class="d-flex justify-content-between  t2 my-1 px-0">
+                                    <a href="#">Cozy knit sweater with jacket</a>
+                                    <h6>$23.00</h6>
+                                </div>
+                                
+                            </div>
+                            <div>
+    
+                            </div>
+                        </div>
+
+                        
+                        <div class="col-lg-4 col-md-6 col-12 my-2 fadcard">
+                            <div class="imgcontainer position-relative">
+                                <img src="./assets/shop/Products/2.png">
+                                <span>10% OFF</span>
+                                <div class="iconscont">
+                                    <a href="#"><i class="bi bi-heart-fill"></i></a>
+                                    <a href="#"><i class="bi bi-eye-fill"></i></a>
+                                </div>
+                                <div class="hiddenbtn">
+                                    <a href="#">
+                                        <i class="bi bi-basket2"></i>
+                                        ADD TO CART
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="text my-2 px-1">
+                                <div class="d-flex justify-content-between ">
+                                    <div class="t1">
+                                        <span class="ccrimson"><i class="bi bi-star-fill"></i></span>
+                                        <span class="ccrimson"><i class="bi bi-star-fill"></i></span>
+                                        <span class="ccrimson"><i class="bi bi-star-fill"></i></span>
+                                        <span class="ccrimson"><i class="bi bi-star-fill"></i></span>
+                                        <span class="cgrey"><i class="bi bi-star-fill"></i></span>
+                                        <a href="#">(50)</a>
+                                    </div>
+                                    <stroke class=" text-decoration-line-through cgrey">$67.00</stroke>
+                                </div>
+                            
+                                <div class="d-flex justify-content-between  t2 my-1 px-0">
+                                    <a href="#">Cozy knit sweater with jacket</a>
+                                    <h6>$23.00</h6>
+                                </div>
+                                
+                            </div>
+                            <div>
+                            </div>
+                        </div>
+
+                        
+                        <div class="col-lg-4 col-md-6 col-12 my-2 fadcard">
+                            <div class="imgcontainer position-relative">
+                                <img src="./assets/shop/Products/3.png">
+                                <span>10% OFF</span>
+                                <div class="iconscont">
+                                    <a href="#"><i class="bi bi-heart-fill"></i></a>
+                                    <a href="#"><i class="bi bi-eye-fill"></i></a>
+                                </div>
+                                <div class="hiddenbtn">
+                                    <a href="#">
+                                        <i class="bi bi-basket2"></i>
+                                        ADD TO CART
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="text my-2 px-1">
+                                <div class="d-flex justify-content-between ">
+                                    <div class="t1">
+                                        <span class="ccrimson"><i class="bi bi-star-fill"></i></span>
+                                        <span class="ccrimson"><i class="bi bi-star-fill"></i></span>
+                                        <span class="ccrimson"><i class="bi bi-star-fill"></i></span>
+                                        <span class="ccrimson"><i class="bi bi-star-fill"></i></span>
+                                        <span class="cgrey"><i class="bi bi-star-fill"></i></span>
+                                        <a href="#">(50)</a>
+                                    </div>
+                                    <stroke class=" text-decoration-line-through cgrey">$67.00</stroke>
+                                </div>
+                            
+                                <div class="d-flex justify-content-between  t2 my-1 px-0">
+                                    <a href="#">Cozy knit sweater with jacket</a>
+                                    <h6>$23.00</h6>
+                                </div>
+                                
+                            </div>
+                            <div>
+                            </div>
+                        </div>
+
+                        
+                        <div class="col-lg-4 col-md-6 col-12 my-2 fadcard">
+                            <div class="imgcontainer position-relative">
+                                <img src="./assets/shop/Products/4.png">
+                                <span>10% OFF</span>
+                                <div class="iconscont">
+                                    <a href="#"><i class="bi bi-heart-fill"></i></a>
+                                    <a href="#"><i class="bi bi-eye-fill"></i></a>
+                                </div>
+                                <div class="hiddenbtn">
+                                    <a href="#">
+                                        <i class="bi bi-basket2"></i>
+                                        ADD TO CART
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="text my-2 px-1">
+                                <div class="d-flex justify-content-between ">
+                                    <div class="t1">
+                                        <span class="ccrimson"><i class="bi bi-star-fill"></i></span>
+                                        <span class="ccrimson"><i class="bi bi-star-fill"></i></span>
+                                        <span class="ccrimson"><i class="bi bi-star-fill"></i></span>
+                                        <span class="ccrimson"><i class="bi bi-star-fill"></i></span>
+                                        <span class="cgrey"><i class="bi bi-star-fill"></i></span>
+                                        <a href="#">(50)</a>
+                                    </div>
+                                    <stroke class=" text-decoration-line-through cgrey">$67.00</stroke>
+                                </div>
+                            
+                                <div class="d-flex justify-content-between  t2 my-1 px-0">
+                                    <a href="#">Cozy knit sweater with jacket</a>
+                                    <h6>$23.00</h6>
+                                </div>
+                                
+                            </div>
+                            <div>
+                            </div>
+                        </div>
+
+
+
+                        
+                        <div class="col-lg-4 col-md-6 col-12 my-2 fadcard">
+                            <div class="imgcontainer position-relative">
+                                <img src="./assets/shop/Products/5.png">
+                                <span>10% OFF</span>
+                                <div class="iconscont">
+                                    <a href="#"><i class="bi bi-heart-fill"></i></a>
+                                    <a href="#"><i class="bi bi-eye-fill"></i></a>
+                                </div>
+                                <div class="hiddenbtn">
+                                    <a href="#">
+                                        <i class="bi bi-basket2"></i>
+                                        ADD TO CART
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="text my-2 px-1">
+                                <div class="d-flex justify-content-between ">
+                                    <div class="t1">
+                                        <span class="ccrimson"><i class="bi bi-star-fill"></i></span>
+                                        <span class="ccrimson"><i class="bi bi-star-fill"></i></span>
+                                        <span class="ccrimson"><i class="bi bi-star-fill"></i></span>
+                                        <span class="ccrimson"><i class="bi bi-star-fill"></i></span>
+                                        <span class="cgrey"><i class="bi bi-star-fill"></i></span>
+                                        <a href="#">(50)</a>
+                                    </div>
+                                    <stroke class=" text-decoration-line-through cgrey">$67.00</stroke>
+                                </div>
+                            
+                                <div class="d-flex justify-content-between  t2 my-1 px-0">
+                                    <a href="#">Cozy knit sweater with jacket</a>
+                                    <h6>$23.00</h6>
+                                </div>
+                                
+                            </div>
+                            <div>
+                            </div>
+                        </div>
+
+                        
+                        
+                        <div class="col-lg-4 col-md-6 col-12 my-2 fadcard">
+                            <div class="imgcontainer position-relative">
+                                <img src="./assets/shop/Products/6.png">
+                                <span>10% OFF</span>
+                                <div class="iconscont">
+                                    <a href="#"><i class="bi bi-heart-fill"></i></a>
+                                    <a href="#"><i class="bi bi-eye-fill"></i></a>
+                                </div>
+                                <div class="hiddenbtn">
+                                    <a href="#">
+                                        <i class="bi bi-basket2"></i>
+                                        ADD TO CART
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="text my-2 px-1">
+                                <div class="d-flex justify-content-between ">
+                                    <div class="t1">
+                                        <span class="ccrimson"><i class="bi bi-star-fill"></i></span>
+                                        <span class="ccrimson"><i class="bi bi-star-fill"></i></span>
+                                        <span class="ccrimson"><i class="bi bi-star-fill"></i></span>
+                                        <span class="ccrimson"><i class="bi bi-star-fill"></i></span>
+                                        <span class="cgrey"><i class="bi bi-star-fill"></i></span>
+                                        <a href="#">(50)</a>
+                                    </div>
+                                    <stroke class=" text-decoration-line-through cgrey">$67.00</stroke>
+                                </div>
+                            
+                                <div class="d-flex justify-content-between  t2 my-1 px-0">
+                                    <a href="#">Cozy knit sweater with jacket</a>
+                                    <h6>$23.00</h6>
+                                </div>
+                                
+                            </div>
+                            <div>
+                            </div>
+                        </div>
+
+
+
+                        
+                        
+                        <div class="col-lg-4 col-md-6 col-12 my-2 fadcard">
+                            <div class="imgcontainer position-relative">
+                                <img src="./assets/shop/Products/7.png">
+                                <span>10% OFF</span>
+                                <div class="iconscont">
+                                    <a href="#"><i class="bi bi-heart-fill"></i></a>
+                                    <a href="#"><i class="bi bi-eye-fill"></i></a>
+                                </div>
+                                <div class="hiddenbtn">
+                                    <a href="#">
+                                        <i class="bi bi-basket2"></i>
+                                        ADD TO CART
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="text my-2 px-1">
+                                <div class="d-flex justify-content-between ">
+                                    <div class="t1">
+                                        <span class="ccrimson"><i class="bi bi-star-fill"></i></span>
+                                        <span class="ccrimson"><i class="bi bi-star-fill"></i></span>
+                                        <span class="ccrimson"><i class="bi bi-star-fill"></i></span>
+                                        <span class="ccrimson"><i class="bi bi-star-fill"></i></span>
+                                        <span class="cgrey"><i class="bi bi-star-fill"></i></span>
+                                        <a href="#">(50)</a>
+                                    </div>
+                                    <stroke class=" text-decoration-line-through cgrey">$67.00</stroke>
+                                </div>
+                            
+                                <div class="d-flex justify-content-between  t2 my-1 px-0">
+                                    <a href="#">Cozy knit sweater with jacket</a>
+                                    <h6>$23.00</h6>
+                                </div>
+                                
+                            </div>
+                            <div>
+                            </div>
+                        </div>
+
+                        
+                        
+                        <div class="col-lg-4 col-md-6 col-12 my-2 fadcard">
+                            <div class="imgcontainer position-relative">
+                                <img src="./assets/shop/Products/8.png">
+                                <span>10% OFF</span>
+                                <div class="iconscont">
+                                    <a href="#"><i class="bi bi-heart-fill"></i></a>
+                                    <a href="#"><i class="bi bi-eye-fill"></i></a>
+                                </div>
+                                <div class="hiddenbtn">
+                                    <a href="#">
+                                        <i class="bi bi-basket2"></i>
+                                        ADD TO CART
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="text my-2 px-1">
+                                <div class="d-flex justify-content-between ">
+                                    <div class="t1">
+                                        <span class="ccrimson"><i class="bi bi-star-fill"></i></span>
+                                        <span class="ccrimson"><i class="bi bi-star-fill"></i></span>
+                                        <span class="ccrimson"><i class="bi bi-star-fill"></i></span>
+                                        <span class="ccrimson"><i class="bi bi-star-fill"></i></span>
+                                        <span class="cgrey"><i class="bi bi-star-fill"></i></span>
+                                        <a href="#">(50)</a>
+                                    </div>
+                                    <stroke class=" text-decoration-line-through cgrey">$67.00</stroke>
+                                </div>
+                            
+                                <div class="d-flex justify-content-between  t2 my-1 px-0">
+                                    <a href="#">Cozy knit sweater with jacket</a>
+                                    <h6>$23.00</h6>
+                                </div>
+                                
+                            </div>
+                            <div>
+                            </div>
+                        </div>
+
+
+                        
+                        <div class="col-lg-4 col-md-6 col-12 my-2 fadcard">
+                            <div class="imgcontainer position-relative">
+                                <img src="./assets/shop/Products/9.png">
+                                <span>10% OFF</span>
+                                <div class="iconscont">
+                                    <a href="#"><i class="bi bi-heart-fill"></i></a>
+                                    <a href="#"><i class="bi bi-eye-fill"></i></a>
+                                </div>
+                                <div class="hiddenbtn">
+                                    <a href="#">
+                                        <i class="bi bi-basket2"></i>
+                                        ADD TO CART
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="text my-2 px-1">
+                                <div class="d-flex justify-content-between ">
+                                    <div class="t1">
+                                        <span class="ccrimson"><i class="bi bi-star-fill"></i></span>
+                                        <span class="ccrimson"><i class="bi bi-star-fill"></i></span>
+                                        <span class="ccrimson"><i class="bi bi-star-fill"></i></span>
+                                        <span class="ccrimson"><i class="bi bi-star-fill"></i></span>
+                                        <span class="cgrey"><i class="bi bi-star-fill"></i></span>
+                                        <a href="#">(50)</a>
+                                    </div>
+                                    <stroke class=" text-decoration-line-through cgrey">$67.00</stroke>
+                                </div>
+                            
+                                <div class="d-flex justify-content-between  t2 my-1 px-0">
+                                    <a href="#">Cozy knit sweater with jacket</a>
+                                    <h6>$23.00</h6>
+                                </div>
+                                
+                            </div>
+                            <div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="d-flex gap-3 shoppag fadcard">
+                        <div>
+                            <button>
+                                <
+                            </button>
+                        </div>
+                        <div>
+                            <input type="radio" name="shoppages" id="spage1">
+                            <label for="spage1" class="active">01</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="shoppages" id="spage2">
+                            <label for="spage1">02</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="shoppages" id="spage3">
+                            <label for="spage1">03</label>
+                        </div>
+                        <div>
+                            
+                            <label>...</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="shoppages" id="spage20">
+                            <label for="spage20">20</label>
+                        </div>
+                        <div>
+                            <button>
+                                >
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                </div>
+            </div>
+        </div>
+     </div>
+    <!--end of shop products -->
+
+     <!-- NEW SETTLER -->
+     <div class="container newsettler my-5">
+        <div class="row bg-white fadcard">
+            <div class="col-lg-6 col-12 ">
+                <div class="m-5  d-flex flex-column gap-4">
+
+                    <p class="cdarkblue">
+                        Our Newsletter
+                    </p>
+                    <h2 class=" text-capitalize">
+                        Get weekly update. Sign up and get up to <small class="ccrimson text-decoration-underline">20% Off</small>  your first purchase
+                    </h2>
+                    <div class=" position-relative">
+                        <input type="text" placeholder="Write Your E-mail Address">
+                        <button>Subscribe</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 d-lg-flex d-none justify-content-end">
+                <img src="./assets/newsettler/1.png" class="w-75">
+            </div>
+        </div>
+      </div>
+     <!--END OF NEW SETTLER -->
+
+     <!-- FOOTER -->
+      <footer class="mt-5">
+        <div class="container my-5 fadcard">
+            <div class="row">
+                <div class="col-xl-3 col-md-6 col-12 d-flex flex-column gap-3 one">
+                    <div>
+                        <a href="./index.html"><img src="./assets/logo/logo.png"></a>
+                    </div>
+                    <div class="py-2">
+
+                        <p class="fs-6">
+                            Pesco is an exciting International brand we provide high quality clothes
+                        </p>
+                        <div>
+                        <span><i class="bi bi-envelope-fill me-2 fs-4"></i></span>
+                    <a href="#">
+                            info@mydomain.com</a>
+                    </div>
+                    <div class="bdb pb-5">
+                        <span><i class="bi bi-telephone-fill me-2 fs-4"></i></span>
+                        <a href="#" >
+                                info@mydomain.com
+                            </a>
+                    </div>
+                    <div class="d-flex gap-3 one1 py-3">
+                        <p class="cdarkblue fs-5">Find Us:</p>
+                        <a href="#">
+                            <i class="bi bi-facebook"></i>
+                        </a>
+                        <a href="#">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+                        <a href="#">
+                            <i class="bi bi-linkedin"></i>
+                        </a>
+                        <a href="#">
+                            <i class="bi bi-twitter"></i>
+                        </a>
+                    </div>
+                </div>
+                </div>
+
+                <div class="col-xl-3 col-md-6 col-12 two">
+                    <h3>Customer Services</h3>
+                    <div class="py-1">
+
+                        <ul class="m-0 p-0">
+                            <li>
+                            <span class="me-2">
+                                <img src="./assets/footer/star.svg">
+                            </span>
+                            <a href="#">Collections & Delivery</a>
+                        </li>
+                        <li>
+                            <span class="me-2">
+                                <img src="./assets/footer/star.svg">
+                            </span>
+                            <a href="#">
+                                Returns & Refunds
+                            </a>
+                        </li>
+                        <li>
+                            <span class="me-2">
+                                <img src="./assets/footer/star.svg">
+                            </span>
+                            <a href="#">
+                                Terms & Conditions
+                            </a>
+                        </li>
+                        <li>
+                            <span class="me-2">
+                                <img src="./assets/footer/star.svg">
+                            </span>
+                            <a href="#">
+                                Delivery Return
+                            </a>
+                        </li>
+                        <li>
+                            <span class="me-2">
+                                <img src="./assets/footer/star.svg">
+                            </span>
+                            <a href="#">
+                                Store Locations
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                </div>
+
+                <div class="col-xl-3 col-md-6 col-12 two ps-xl-5">
+                    <h3>Quick Link</h3>
+                    <div class="py-1">
+
+                        <ul class="m-0 p-0">
+                            <li>
+                            <span class="me-2">
+                                <img src="./assets/footer/star.svg">
+                            </span>
+                            <a href="#">Privacy Policy
+                            </a>
+                        </li>
+                        <li>
+                            <span class="me-2">
+                                <img src="./assets/footer/star.svg">
+                            </span>
+                            <a href="#">
+                                Terms Of Use
+                            </a>
+                        </li>
+                        <li>
+                            <span class="me-2">
+                                <img src="./assets/footer/star.svg">
+                            </span>
+                            <a href="#">
+                                FAQ
+                            </a>
+                        </li>
+                        <li>
+                            <span class="me-2">
+                                <img src="./assets/footer/star.svg">
+                            </span>
+                            <a href="#">
+                                Contact
+                            </a>
+                        </li>
+                        <li>
+                            <span class="me-2">
+                                <img src="./assets/footer/star.svg">
+                            </span>
+                            <a href="#">
+                                Login / Register
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                </div>
+
+                <div class="col-xl-3 col-md-6 col-12 three">
+                    <h3>Recent Posts</h3>
+                    <div class="py-4 d-flex flex-column gap-3">
+
+                        <div class="row ">
+                            <div class="col-4 ">
+                                <div class="imgcontainer"> 
+                                    <img src="./assets/trending/4.png" class="w-100">
+                                </div>
+                            </div>
+                            <div class="col-8">
+                                <a href="#">
+                                    <p>
+                                        Tips on Finding Affordable Fashion Gems Online
+                                    </p>
+                                    <small>
+                                        July 11, 2023
+                                    </small>
+                                </a>
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col-4 ">
+                            <div class="imgcontainer"> 
+                                <img src="./assets/trending/3.png" class="w-100">
+                            </div>
+                        </div>
+                        <div class="col-8">
+                            <a href="#">
+                                <p>
+                                    Mastering the Art of Fashion E-commerce Marketing
+                            </p>
+                                <small>
+                                    July 11, 2023
+                                </small>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-4 ">
+                            <div class="imgcontainer"> 
+                                <img src="./assets/trending/1.png" class="w-100">
+                            </div>
+                        </div>
+                        <div class="col-8">
+                            <a href="#">
+                                <p>
+                                    Must-Have Trends You Can Shop Online Now
+                                    </p>
+                                <small>
+                                    July 11, 2023
+                                </small>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="container">
+            <div class="row align-items-center pb-3">
+
+                <div class="col-lg-6 col-12 text-lg-start text-center py-3">
+                    <p class="fs-6">
+                        © 2024. All rights reserved by
+                        <span class="ccrimson fsans fw-medium">
+                            YMT 
+                        </span>
+                    </p>
+                    
+                </div>
+                <div class="col-lg-6 col-12 d-flex justify-content-lg-end justify-content-center ">
+                    <a href="#">
+                        <img src="./assets/footer/payment-method.png">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+     <!--END OF FOOTER -->
+
+     <a href="#" class="hiddenredbtn"><i class="bi bi-chevron-up"></i></a>
+
+</body>
+</html>

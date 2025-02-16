@@ -1,0 +1,473 @@
+.shops{
+    background: url(../assets/shop/bg.png) center no-repeat;
+    background-size: cover;
+    padding:30px 0px ;
+    
+}
+.shops .left a{
+    color: var(--bgcrimson);
+    font-family: var(--fontsans);
+    font-weight: 500;
+    font-size: 1.4rem;
+}
+.shops .left small{
+    font-family: var(--fontsans);
+    font-weight: 500;
+    font-size: 1.4rem;
+}
+.shops .sharp{
+
+    width: 100%;
+    position: absolute;
+    bottom: 5px;
+    z-index: 1;
+}
+.shopprods h4{
+    border-bottom: dashed 1px var(--bggrey);
+    padding-bottom: 20px;
+}
+.shopprods label{
+    width: 90%;
+    display:flex ;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+.shopprods label p{
+    margin: 0px;
+    padding: 0px;
+}
+.shopprods label span{
+    font-family: var(--fontsans);
+}
+.shopprods input[type="checkbox"]{
+    width: 17px;
+}
+
+/* Style the slider container */
+#slider-range {
+    height: 7px; /* Height of the slider */
+    background: var(--bgwhite); /* Background color of the slider */
+    border: solid 1px;
+    border-radius: 5px; /* Rounded edges */
+    position: relative;
+    margin: 20px 0;
+}
+
+/* Style the range bar (the highlighted part) */
+#slider-range .ui-slider-range {
+    background: var(--bgdarkblue); /* Blue color for the range */
+    border-radius: 5px; /* Rounded edges for the range */
+}
+
+/* Style the slider handles (draggable knobs) */
+#slider-range .ui-slider-handle {
+    width: 15px; /* Width of the handle */
+    height: 15px; /* Height of the handle */
+    background: #fff; /* White color for the handle */
+    border: 2px solid var(--bgdarkblue); /* Border color */
+    border-radius: 50%; /* Make handles circular */
+    cursor: pointer; /* Change cursor to pointer */
+    outline: none;
+}
+input[name="colors"]~ label{
+border: solid 1px var(--bgwhite);
+border-radius: 50px;
+padding: 1px 4px 1px 1px;
+text-align: center;
+transition: all 0.2s ease-in;
+cursor: pointer;
+}
+input[name="colors2"]~ label{
+border: solid 2px var(--bgdarkblue);
+border-radius: 50px;
+text-align: center;
+transition: all 0.2s ease-in;
+width: 30px;
+height: 30px;
+cursor: pointer;
+}
+
+input[name="colors"],
+input[name="colors2"],
+input[name="size"],
+input[name="size2"],
+input[name="desrev"]{
+    display: none;
+}
+input[name="colors2"]:checked ~ label{
+border: solid 5px var(--bggrey);
+}
+input[name="colors"]:checked ~ label{
+border-color: var(--bgcrimson);
+    
+}
+input[name="size"] ~ label,
+input[name="size2"] ~ label{
+    width: fit-content;
+    border: solid 1px var(--bgdarkblue);
+    padding: 3px 20px;
+    border-radius: 20px;
+    font-family: var(--fontsans);
+    font-size: 0.9rem;
+    transition: all 0.2s ease-in;
+    cursor: pointer;
+}
+input[name="size"]:checked ~label,
+input[name="size2"]:checked ~label{
+    background-color: var(--bgcrimson);
+    color: var(--bgwhite);
+    border-color: var(--bgcrimson);
+}
+.leftad a{
+    background-color: var(--bgdarkblue);
+    color: var(--bgwhite);
+    border-radius: 30px;
+    border: none;
+    padding: 10px 30px;
+    font-family: var(--fontsans);
+    font-weight: 500;
+    transition: all 0.3s ease-in;
+}
+.leftad img{
+    height: 216px;
+}
+.leftad a:hover{
+background-color: var(--bgcrimson);
+}
+
+
+ #bigcont {
+    width: 100%;
+    overflow: hidden;
+    border-radius: 30px;
+}
+ #bigcont img{
+    width: 100% ;
+    
+}
+.mySwiper5 .swiper-wrapper .swiper-slide{
+    border-radius: 10px;
+    overflow: hidden;
+}
+.mySwiper5 .swiper-wrapper .swiper-slide img{
+    width: 100%;
+}
+.itemcounter{
+    display:  flex;
+    justify-content: space-between;
+    align-items: center;
+    width:28%;
+    border: solid 1px var(--bggrey20);
+    border-radius: 40px;
+    padding: 10px 20px;
+    background-color: var(--bgwhite);
+}
+.itemcounter button{
+    background-color: transparent;
+    border: none;
+    font-size: 1.5rem;
+}
+.prodbuttons .patc button{
+    background-color: var(--bgdarkblue);
+    color: var(--bgwhite);
+    padding: 10px 20px;
+    border-radius: 30px;
+    border: none;
+    transition: all 0.3s ease-in;
+}
+.prodbuttons .patc button:hover{
+    background-color: var(--bgcrimson);
+}
+.prodbuttons .rightbtns button{
+    background-color: var(--bgwhite);
+    border: solid 1px var(--bggrey20);
+    font-size: 1.5rem;
+    padding: 9px 15px;
+    border-radius: 30px;
+    transition: all 0.3s ease-in;
+}
+.prodbuttons .rightbtns button:hover{
+    background-color: var(--bgdarkblue);
+    color: var(--bgwhite);
+}
+.additionalinfo{
+    border: solid 2px var(--bgyellow);
+    border-radius: 15px;
+}
+.additionalinfo h5{
+    font-family: var(--fontsans);
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+.additionalinfo p{
+    font-family: var(--fontsans);
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+.desrev label{
+    border: solid 1px;
+    background-color: var(--bgwhite);
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: var(--fontsans);
+    font-size: 1.2rem;
+    font-weight: 500;
+    transition: all 0.3s ease-in;
+}
+.des,
+.rev{
+    display: none;
+}
+#des:checked ~.desrev #des1{
+    background-color: var(--bgdarkblue);
+    color: var(--bgwhite);
+}
+#rev:checked ~.desrev #rev1{
+    background-color: var(--bgdarkblue);
+    color: var(--bgwhite);
+
+}
+#des:checked ~.desrevcont .des{
+    display: block;
+}
+#rev:checked ~ .desrevcont .rev{
+    display: block;
+}
+
+.desrevcont .des ul li{
+    color: var(--bggrey);
+    font-family: var(--fontsans);
+    font-size: 1.05rem;
+    position: relative;
+}
+.desrevcont .des ul li::before{
+    content: "•"; /* Unicode character for bullet */
+    font-size: 30px; /* Increase bullet size */
+    position: absolute; /* Position the bullet */
+    left: -25px; 
+    top: -10px;
+    color: var(--bgdarkblue);
+}
+.desrevcont .rev .reviewcard{
+    background-color: var(--bgwhite);
+    padding:20px 30px;
+    box-shadow: 0px 0px 2px var(--bggrey20);
+    border-radius: 10px;
+}
+.desrevcont .rev .reviewcard .imgcontainer{
+border: solid 2px var(--bgyellow);
+border-radius: 50px;
+overflow: hidden;
+padding: 5px;
+}
+.desrevcont .revform  input[name="flname"]{
+outline: none;
+border: solid 1px var(--bggrey40);
+width: 100%;
+padding: 20px;
+border-radius: 20px;
+background-color: transparent;
+}
+.desrevcont .revform  input[name="flname"]::placeholder,
+.desrevcont .revform  textarea::placeholder{
+    font-family: var(--fontsans);
+    font-weight: 500px;
+    color: var(--bggrey);
+}
+.desrevcont .revform textarea{
+    width: 100%;
+    height: 300px;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: transparent;
+    outline: none;
+    border: solid 1px var(--bggrey40);
+
+}
+.desrevcont .revform button{
+    width: fit-content;
+    padding: 10px 20px;
+    background-color: var(--bgdarkblue);
+    color: var(--bgwhite);
+    border-radius: 30px;
+    font-family: var(--fontsans);
+    border: none;
+    font-size: 1.2rem;
+    transition: all 0.3s ease-in;
+}
+.desrevcont .revform button:hover{
+    background-color: var(--bgcrimson);
+}
+
+
+.cartpage::-webkit-scrollbar{
+    background-color: var(--bggrey40);
+}
+.cartpage::-webkit-scrollbar-thumb{
+    background-color: var(--bgdarkblue);
+}
+.cartpage .cartrow>div{
+    border-bottom:  solid 1px var(--bgyellow);
+    padding-top: 10px;
+    padding-bottom: 20px;
+
+}
+
+.cartpage .row a{
+    text-transform: capitalize;
+    font-size: 1.1rem;
+    font-family: var(--fontsans);
+    font-weight: 600;
+    transition: all 0.3s ease-in;
+}
+.cartpage .row a:hover{
+    color: var(--bgcrimson);
+}
+.cartpage .row .closebtn{
+    background-color: transparent;
+    border: solid 1px var(--bggrey40);
+    border-radius: 30px;
+    width: 40px;
+    height: 40px;
+}
+.blackredbtn{
+    background-color: var(--bgdarkblue);
+    color: var(--bgwhite);
+    font-family: var(--fontsans);
+    padding: 10px 25px;
+    font-weight: 400;
+    border: none;
+    border-radius: 30px;
+    transition: all 0.3s ease-in;
+    font-size: 1.2rem;
+}
+.blackredbtn:hover{
+    background-color: var(--bgcrimson);
+}
+.couponborder{
+    border: solid 2px;
+    border-radius: 10px;
+}
+.couponborder input{
+    width:90%;
+    padding: 10px;
+    border: solid 1px var(--bggrey20);
+    border-radius: 10px;
+    outline: none;
+}
+.couponborder button{
+    background-color: var(--bgdarkblue);
+    color: var(--bgwhite);
+    font-family: var(--fontsans);
+    padding: 10px 25px;
+    font-weight: 400;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+}
+.couponborder p{
+    margin: 0px;
+}
+.checkout form input,
+.checkout form textarea{
+border: solid 1px var(--bggrey40);
+padding:15px 20px;
+border-radius: 8px;
+outline: none;
+}
+.checkout form textarea{
+    height: 100px;
+    width: 100%;
+}
+.checkout form input::placeholder,
+.checkout form textarea::placeholder{
+    font-family: var(--fontsans);
+    font-weight: 400;
+}
+.checkout form h6{
+    font-family: var(--fontsans);
+    font-weight: 500;
+}
+.checkout form h6~span{
+    font-size: 1.2rem;
+    position: relative;
+    top: -5px;
+}
+.checkout form .selector{
+    position: relative;
+    cursor: pointer;
+    background-color: var(--bgwhite);
+    padding:15px 20px;
+    border-radius: 8px;
+    border: solid 1px var(--bggrey40);
+}
+.checkout form .selector label, 
+.checkout form .selector label small{
+    font-family:var(--fontsans) ;
+    font-size: 1rem;
+    font-weight: 400;
+    cursor: pointer;
+    
+}
+.checkout form .selector label span{
+    font-size: 0.8rem;
+    padding:0px 10px;
+    
+}
+.checkout form .selector ul{
+    width: 100%;
+    height: 200px;
+    border: solid 1px black;
+    padding: 0px;
+    overflow-y: scroll;
+    border-radius: 7px;
+    border: none;
+    box-shadow: -1px 1px 2px var(--bggrey20);
+    position: absolute;
+    z-index: 1000;
+    top: 102%;
+    left: 0px;
+    background-color: var(--bgwhite);
+    transition: all 0.2s ease-in-out;
+}
+.checkout form .selector ul.hidden{
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(-25%) scale(0.6);
+}
+.checkout form .selector ul li{
+    padding: 10px;
+    font-size: 0.8rem;
+    font-weight: 100;
+    font-family:var(--fontsans) ;
+    font-size: 0.9rem;
+    font-weight: 400;
+    cursor: pointer;
+}
+.checkout form .selector ul li:hover{
+    background-color: var(--bggrey10);
+}
+.checkout form .selector ul li.active{
+    background-color: var(--bggrey10);
+    font-weight: 600;
+}
+.checkout form .selector ul::-webkit-scrollbar{
+    width: 7px;
+    background-color: var(--bggrey20);
+}
+.checkout form .selector ul::-webkit-scrollbar-thumb{
+    background-color: var(--bgdarkblue);
+}
+.checkout p {
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+.checkout p span{
+    font-size: 0.9rem;
+}
+.checkout input[name="payment"],
+.checkout input[name="payment"]~label{
+cursor: pointer;
+}

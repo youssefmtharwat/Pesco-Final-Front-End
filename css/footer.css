@@ -1,0 +1,68 @@
+footer{
+    background: url(../assets/footer/Footer.png) center no-repeat ;
+    background-size: cover;
+    padding: 30px 0px 0px;
+}
+footer .bdb{
+    border-bottom: dashed 1px;
+    width: fit-content;
+}
+footer .one a{
+    color: var(--bggrey);
+    text-decoration: none;
+    font-family: var(--fontsans);
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+footer .one .one1 a{
+    color: var(--bgdarkblue);
+    text-decoration: none;
+    font-size: 1.5rem;
+    transition: all 0.3s ease-in;
+}
+footer .one .one1 a:hover{
+    color: var(--bgcrimson);
+}
+footer .two a{
+    color: var(--bggrey);
+    text-decoration: none;
+    font-family: var(--fontsans);
+    font-weight: 400;
+    font-size: 1.15rem;
+    transition: all 0.3s ease-in;
+}
+footer .two a:hover{
+    color: var(--bgcrimson);
+}
+footer .two ul li{
+    margin: 20px 0px;
+}
+footer .three .imgcontainer{
+    overflow: hidden;
+    border-radius: 10px;
+}
+footer .three a{
+    text-decoration: none;
+}
+footer .three a p{
+color: var(--bgdarkblue);
+margin: 0px;
+font-size: 0.9rem;
+font-weight: 700;
+transition: all 0.3s ease-in;
+}
+footer .three a p:hover{
+    color: var(--bgcrimson);
+}
+footer .three a small{
+    color: var(--bggrey);
+    font-size: 0.8rem;
+    font-weight: 500;
+    font-family: var(--fontsans);
+}
+footer hr{
+    margin-top: 50px;
+    padding-top: 50px;
+    border-width: 1px;
+    color: var(--bgorange);
+}
